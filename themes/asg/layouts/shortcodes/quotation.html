@@ -1,0 +1,4 @@
+<blockquote class="blockquote">
+    <p class="mb-0">{{ .Get "quote" }}</p>
+    <footer class="blockquote-footer">{{ .Get "source" }}{{with .Get "citation"}}<cite title="{{.}}">{{.}}</cite>{{end}}</footer>
+</blockquote>

@@ -1,0 +1,6 @@
+.DS_Store
+.*.swp
+public/
+themes/asg/node_modules
+themes/asg/yarn.lock
+themes/asg/static/css/.sass-cache

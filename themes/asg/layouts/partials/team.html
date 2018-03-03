@@ -1,0 +1,36 @@
+{{ "<!-- Team Section -->" | safeHTML }}
+<section id="team">
+    <div class="container">
+        <div class="row team-intro text-center">
+            <p>Kinvolk is a team of operating and distributed systems engineers working on modern cloud infrastructure projects.</p>
+            <p>Interested in joining the team? Then take a look our the <a href="/careers/">careers page</a>.</p>
+        </div>
+        <div class="row">
+            {{ range where $.Site.Pages "Section" "team" }}
+            {{ if isset .Params "position" }}
+            <div class="col-sm-3">
+                <div class="card team-card" id="{{ .File.BaseFileName }}">
+                    <img src="{{ $.Site.BaseURL }}/media/{{ .Params.photo }}" class="card-img-top img-fluid rounded-circle" alt="{{ .Title }}">
+                    <div class="card-block">
+                    <h4 class="card-title">{{ .Title }}</h4>
+                    <p class="card-subtitle text-muted">{{ .Params.position }}</p>
+                    <p class="card-text"></p>
+                    <ul class="list-inline social-buttons">
+                        {{ if isset .Params "github" }}
+                        <li class="list-inline-item"><a href="https://github.com/{{ .Params.github }}"><i class="fa fa-github"></i></a></li>
+                        {{ end }}
+                        {{ if isset .Params "linkedin" }}
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/{{ .Params.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+                        {{ end }}
+                        {{ if isset .Params "twitter" }}
+                        <li class="list-inline-item"><a href="https://twitter.com/{{ .Params.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                        {{ end }}
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
