@@ -1,4 +1,4 @@
-baseurl: 'https://all-systems-go.io/'
+baseurl: '/'
 title: All Systems Go!
 canonifyurls: true
 paginate: 8
