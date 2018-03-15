@@ -9034,7 +9034,7 @@ html {
 
 body {
   color: #000;
-  background-color: #DDD;
+  background-color: #EEE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9305,7 +9305,7 @@ footer > .container {
 
 #menu-sponsorship .dropdown-menu {
   border: 8px solid #00FF00;
-  background-color: #DDD;
+  background-color: #EEE;
 }
 
 #menu-sponsorship .dropdown-menu .dropdown-item:active {
@@ -9319,7 +9319,7 @@ footer > .container {
 
 #menu-program .dropdown-menu {
   border: 8px solid #FF0000;
-  background-color: #DDD;
+  background-color: #EEE;
 }
 
 #menu-conference {
@@ -9329,7 +9329,7 @@ footer > .container {
 
 #menu-conference .dropdown-menu {
   border: 8px solid #0000FF;
-  background-color: #DDD;
+  background-color: #EEE;
 }
 
 #menu-conference .dropdown-item:active {
