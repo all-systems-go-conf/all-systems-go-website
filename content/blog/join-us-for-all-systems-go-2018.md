@@ -7,9 +7,15 @@ draft: false
 
 The All Systems Go! organizing team is happy to announce this year’s conference is taking place September 28th-30th at [Spreewerkstaetten](http://spreewerkstaetten.de/)—the same venue as last year—in Berlin. This year we’ll have two presentation days–Friday and Saturday–with a hackfest on Sunday.
 
-## Thanks to sponsors
+## Thanks to the 2018 sponsors
 
-Before jumping into details we’d like to thank our sponsors. All Systems Go! Is only possible with the support of our top sponsors [Facebook](https://code.facebook.com/), [Kinvolk](https://kinvolk.io/) and [Red Hat](https://www.redhat.com/en) and other sponsors, [Axis](https://www.axis.com/de-de), [Microsoft](https://www.microsoft.com/), [openSUSE](https://www.opensuse.org/) and [Pantheon](https://pantheon.io/). If your organization would also like to support All Systems Go! 2018 you can find the details in our [sponsorship prospectus](https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!%202018.pdf).
+Before jumping into details we’d like to thank our sponsors. All Systems Go! Is only possible with the support of our top sponsors [Facebook](https://code.facebook.com/), [Kinvolk](https://kinvolk.io/) and [Red Hat](https://www.redhat.com/en) and other sponsors, [Axis](https://www.axis.com/de-de), [Microsoft](https://www.microsoft.com/), [openSUSE](https://www.opensuse.org/) and [Pantheon](https://pantheon.io/).
+
+<figure class="img-fluid">
+	<img src="/media/announcement-sponsor-logos.png" class="img-fluid">
+</figure>
+
+If your organization would also like to support All Systems Go! 2018 you can find the details in our [sponsorship prospectus](https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!%202018.pdf).
 
 ## Hackfest
 
