@@ -19,7 +19,7 @@ If your organization would also like to support All Systems Go! 2018 you can fin
 
 ## Hackfest
 
-Based on feedback we’ve received last year, we've added a Hackfest on the final day this year. Attendees asked to have more time to sit down, discuss and work on problems together. The Hackfest will take place at the conference venue.
+Based on feedback we received last year, we've added a Hackfest on the final day this year. Attendees asked to have more time to sit down, discuss and work on problems together. The Hackfest will take place at the conference venue.
 
 ## Project hackfests
 

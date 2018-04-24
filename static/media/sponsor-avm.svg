@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="970.5694"
+   height="635.14862"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   version="1.0"
+   sodipodi:docbase="C:\Dokumente und Einstellungen\Andreas\Eigene Dateien\Eigene Bilder\sonstiges\Logos\Vektor\Computer, Electronics"
+   sodipodi:docname="AVM-Logo.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="350"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="904"
+     inkscape:window-height="574"
+     inkscape:window-x="225"
+     inkscape:window-y="125" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(113.0049,-225.5557)">
+    <g
+       id="g1904">
+      <path
+         style="fill:#ed2229;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.10201;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 138.87703,570.34343 C 135.84033,578.95023 135.33495,586.54492 135.07802,591.60792 L 135.07802,710.08096 L 230.5172,710.08096 L 230.5172,334.4094 L -113.0049,710.08096 L 15.593734,710.08096 L 128.24648,585.27884 C 134.57258,578.44396 140.14478,566.7992 138.87703,570.34343"
+         class="ps010 ps19"
+         id="path641" />
+      <path
+         style="fill:#007fd6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.10201;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 350.25423,489.84222 C 353.29512,481.2354 353.80056,473.64073 354.05325,468.57773 L 354.05325,338.20675 L 262.16039,338.20675 L 262.16039,720.96635 L 715.79981,225.55567 L 584.9226,225.80878 L 361.14171,474.90633 C 354.55868,481.74168 348.99067,493.13329 350.25423,489.84222"
+         class="ps07 ps19"
+         id="path651" />
+      <path
+         style="fill:black;fill-rule:nonzero;stroke:none;stroke-width:0.10201;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+         d="M 673.52601,515.41028 L 857.56451,314.41056 L 857.56451,710.08096 L 758.33051,710.08096 L 758.33051,560.97681 L 581.63319,755.90065 L 581.63319,557.68574 L 307.22236,860.70431 L 176.85055,860.70431 L 673.52601,318.71418 L 673.52601,515.41028"
+         class="ps07 ps19"
+         id="path661" />
+    </g>
+  </g>
+</svg>
