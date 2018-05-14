@@ -13,7 +13,7 @@ The CFP will close on July 30th. Notification of acceptance and non-acceptance w
 
 All Systems Go! is a conference focused on foundational open-source Linux technologies. It was created by engineers for engineers and, thus, proposals should be
 
-All topic relevant to foundational open-source Linux technologies are welcome. In particular, however, we are looking for proposals including, but not limited to, the following topics:
+All topics relevant to foundational open-source Linux technologies are welcome. In particular, however, we are looking for proposals including, but not limited to, the following topics:
 
 * Low-level container executors and infrastructure
 * IoT and embedded OS infrastructure
