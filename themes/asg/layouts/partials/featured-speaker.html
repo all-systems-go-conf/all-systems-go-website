@@ -1,0 +1,27 @@
+{{ $spkr := .speaker }}
+
+<div class="card speaker">
+   <img class="card-img-top" src="/media/speaker/{{ $spkr.photo }}" alt="Speaker photo of {{ $spkr.name }}">
+   <div class="card-body">
+    <h5 class="card-title">{{ $spkr.name }}</h5>
+    <div class="organization">
+      <span class="org-label text-muted d-block">ORGANIZATION</span>
+      <a class="org-link" href="{{ $spkr.org_link }}">{{ $spkr.org }}</a>
+    </div>
+    <div class="projects mt-2">
+      <span class=" project-label text-muted d-block">PROJECT{{ if gt (len $spkr.projects) 1 }}S{{ end }}: </span>
+      {{ $sorted := sort $spkr.projects "name" "asc" }}
+      {{ $links := apply $sorted "partial" "project-link" "." }}
+      {{ $clean := apply $links "chomp" "." }}
+      {{ delimit $clean ", " }}
+    </div>
+   </div>
+   <div class="card-footer text-right">
+         {{ with $spkr.twitter }}
+          <a class="fab fa-twitter fa-2x mx-2" href="https:/twitter.com/{{ . }}"></a>
+         {{ end }}
+         {{ with $spkr.github }}
+         <a class="fab fa-github fa-2x mx-1" href="https:/github.com/{{ . }}"></a>
+         {{ end }}
+   </div>
+</div>

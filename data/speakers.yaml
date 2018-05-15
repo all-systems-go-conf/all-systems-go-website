@@ -1,0 +1,78 @@
+speakers:
+  - name: Liz Rice
+    photo: liz_rice.png
+    org:  Aqua Security
+    org_link: https://www.aquasec.com
+    projects:
+      - name: Kubernetes
+        link: https://kubernetes.io
+    twitter: lizrice
+    github: lizrice
+  - name: Lennart Poettering
+    photo: lennart_poettering.jpg
+    org: Red Hat
+    org_link: https://www.redhat.com
+    projects:
+      - name: systemd
+        link: https://github.com/systemd/systemd
+      - name: casync
+        link: https://github.com/systemd/casync
+    github: poettering
+  - name: Dalton Hubble
+    photo: dalton_hubble.jpg
+    org: Lyft
+    org_link: https://www.lyft.com
+    projects:
+      - name: Typhoon
+        link: https://typhoon.psdn.io/
+      - name: Matchbox
+        link: https://github.com/coreos/matchbox
+    twitter: dghubble
+    github: dghubble
+  - name: Cynthia Thomas
+    photo: cynthia_thomas.jpg
+    org: Covalent
+    org_link: http://covalent.io/
+    projects:
+      - name: Cilium Project
+        link: https://cilium.io
+    twitter: _techcet_
+    github: techcet
+  - name: Antonio Murdaca
+    photo: antonio_murdaca.jpg
+    org: Red Hat
+    org_link: https://www.redhat.com
+    projects:
+      - name: cri-o
+        link: http://cri-o.io/
+    twitter: runc0m
+    github: runcom
+  - name: Eduardo Silva
+    photo: eduardo_silva.jpg
+    org: Treasure Data
+    org_link: https://www.treasuredata.com/
+    projects:
+      - name: Fluent bit
+        link: https://fluentbit.io
+    twitter: edsiper
+    github: edsiper
+  - name: Alban Crequy
+    photo: alban_crequy.jpg
+    org: Kinvolk
+    org_link: https://kinvolk.io
+    projects:
+      - name: rkt
+        link: https://github.com/rkt/rkt
+      - name: Flatcar Linux
+        link: https://flatcar-linux.org
+    twitter: alban
+    github: albcr
+  - name: Sargun Dhillon
+    photo: sargun_dhillon.jpg
+    org: Netflix
+    org_link: https://www.netflix.com
+    projects:
+      - name: sargun
+        link: https://netflix.github.io/titus/
+    twitter: sargun
+    github: sargun

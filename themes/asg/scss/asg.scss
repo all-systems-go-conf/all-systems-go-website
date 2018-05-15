@@ -331,6 +331,50 @@ footer {
     color: $color-white;
 }
 
+.org-label, .project-label {
+    font-size: 0.8rem;
+}
+
+.projects a, .organization a {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.organization a {
+    color: $color-blue;
+}
+
+.projects a {
+    color: $color-red;
+}
+
+.speaker {
+    border-top-width: 15px;
+    border-top-color: $color-green;
+
+    .card-title {
+        font-family: $font-digital;
+        font-size: 1.5rem;
+    }
+
+    >.card-footer {
+        background-color: $color-green;
+
+        >a {
+            color: $color-white;
+        }
+    }
+}
+
+.small-link {
+    font-size: 0.8em;
+    font-weight: 200;
+    text-decoration: underline;
+    a {
+        color: $color-white;
+    }
+}
+
 .small-link {
     font-size: 0.8em;
     font-weight: 200;

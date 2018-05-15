@@ -16,7 +16,7 @@
         "css-prefix": "postcss static/css/*.css --use autoprefixer --replace",
         "css-minify": "npm-run-all --parallel css-minify-*",
         "css-minify-asg": "cleancss --level 1 --source-map --output static/css/asg.min.css static/css/asg.css",
-        "css-minify-font-awesome": "cleancss --level 1 --source-map --output static/css/font-awesome.min.css static/css/font-awesome.css",
+        "css-minify-font-awesome": "cleancss --level 1 --source-map --output static/css/fontawesome.min.css static/css/fontawesome-all.css",
         "css-minify-glyphicons-halflings": "cleancss --level 1 --source-map --output static/css/glyphicons-halflings.min.css static/css/glyphicons-halflings.css",
         "build-js": "npm-run-all js-lint js-compile js-minify",
         "js-lint": "true || eslint js/",

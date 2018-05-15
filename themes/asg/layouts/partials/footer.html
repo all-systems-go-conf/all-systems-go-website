@@ -6,19 +6,13 @@
                   <ul class="list-inline social">
                     <li class="list-inline-item">
                       <a href="mailto:{{ .Site.Params.Email }}">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                        </span>
+                          <i class="fa fa-envelope fa-2x"></i>
                       </a>
                     </li>
                     {{ range .Site.Params.social }}
                     <li class="list-inline-item">
                       <a href="{{ .url }}">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-{{ .title }} fa-stack-1x fa-inverse"></i>
-                        </span>
+                        <i class="fab fa-{{ .title }} fa-2x"></i>
                       </a>
                     </li>
                     {{ end }}
