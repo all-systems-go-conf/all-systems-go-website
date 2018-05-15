@@ -1,0 +1,36 @@
+speakers:
+  - name: Liz Rice
+    photo: liz_rice.png
+    org:  Aqua Security
+    org_link: https://www.aquasec.com
+    twitter: lizrice
+    github: lizrice
+  - name: Lennart Poettering
+    photo: lennart_poettering.jpg
+    org: Red Hat
+    org_link: https://www.redhat.com
+    github: poettering
+  - name: Dalton Hubble
+    photo: dalton_hubble.jpg
+    org: Lyft
+    org_link: https://www.lyft.com
+    twitter: dghubble
+    github: dghubble
+  - name: Cynthia Thomas
+    photo: cynthia_thomas.jpg
+    org: Cilium Project
+    org_link: https://cilium.io
+    twitter: _techcet_
+    github: techcet
+  - name: Antonio Murdaca
+    photo: antonio_murdaca.jpg
+    org: Red Hat
+    org_link: https://www.redhat.com
+    twitter: runc0m
+    github: runcom
+  - name: Eduardo Silva
+    photo: eduardo_silva.jpg
+    org: Fluent bit
+    org_link: https://fluentbit.io
+    twitter: edsiper
+    github: edsiper

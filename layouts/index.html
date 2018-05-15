@@ -45,6 +45,16 @@
             </p>
         </div>
     </div>
+    <div class="row text-center" id="featured-speakers">
+        <div class="col pt-4 mt-5 mb-3">
+            <h1>Featured speakers</h1>
+            <div class="card-deck speakers">
+            {{ range $i, $speaker := sort $.Site.Data.speakers.speakers "" "desc" }}
+                {{ partial "featured-speaker.html" (dict "ctx" . "speaker" $speaker) }}
+            {{ end }}
+            </div>
+        </div>
+    </div>
     <div class="row section">
         <div class="col" id="schedule">
             <h1>Schedule</h1>

@@ -1,0 +1,16 @@
+{{ $spkr := .speaker }}
+
+<div class="card">
+   <img class="card-img-top" src="/media/speaker/{{ $spkr.photo }}" alt="Speaker photo of {{ $spkr.name }}">
+   <div class="card-body">
+    <h5 class="card-title">{{ $spkr.name }}</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+   </div>
+   <div class="card-footer">
+       <ul class="list-inline">
+           <li class="list-inline-item">
+               {{ with $spkr.twitter }}<span class="fa fa-twitter fa-stack-1x fa-inverse"></span>
+           </li>
+       </ul>
+   </div>
+</div>
