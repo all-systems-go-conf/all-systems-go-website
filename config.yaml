@@ -77,7 +77,7 @@ menu:
       weight: -300
     - name: Submit a talk
       identifier: submit-talk
-      url: /#submit-talk
+      url: /#cfp
       parent: program 
       weight: -300
     - name: Become a sponsor
