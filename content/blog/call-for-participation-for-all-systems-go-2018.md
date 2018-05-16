@@ -5,7 +5,7 @@ date: 2018-05-14T9:07:28+01:00
 draft: false
 ---
 
-It’s with pleasure–and some delay–that we announce the Call for Participation (CFP) is open for [All Systems Go! 2018](https://all-systems-go.io) (Sept. 28th-30th). As such, we’d like to invite you to submit your proposals for consideration to the [CFP submission site](https://cfp.all-systems-go.io/en/ASG2018/cfp).
+It’s with pleasure–and some delay–that we announce that the Call for Participation (CFP) is open for [All Systems Go! 2018](https://all-systems-go.io) (Sept. 28th-30th). As such, we’d like to invite you to submit your proposals for consideration to the [CFP submission site](https://cfp.all-systems-go.io/en/ASG2018/cfp).
 
 The CFP will close on July 30th. Notification of acceptance and non-acceptance will go out within 7 days of the closing of the CFP.
 
