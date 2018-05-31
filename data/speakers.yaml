@@ -52,7 +52,7 @@ speakers:
     org: Treasure Data
     org_link: https://www.treasuredata.com/
     projects:
-      - name: Fluent bit
+      - name: Fluent Bit
         link: https://fluentbit.io
     twitter: edsiper
     github: edsiper
