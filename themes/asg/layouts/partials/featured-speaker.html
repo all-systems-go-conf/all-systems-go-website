@@ -9,7 +9,7 @@
       <a class="org-link" href="{{ $spkr.org_link }}">{{ $spkr.org }}</a>
     </div>
     <div class="projects mt-2">
-      <span class=" project-label text-muted d-block">PROJECT{{ if gt (len $spkr.projects) 1 }}S{{ end }}: </span>
+      <span class=" project-label text-muted d-block">PROJECT{{ if gt (len $spkr.projects) 1 }}S{{ end }} </span>
       {{ $sorted := sort $spkr.projects "name" "asc" }}
       {{ $links := apply $sorted "partial" "project-link" "." }}
       {{ $clean := apply $links "chomp" "." }}
