@@ -19,7 +19,6 @@ params:
   Email: org-team@all-systems-go.io
   Subtitle: The foundational user-space Linux conference
   social:
-    
     - title: twitter
       url: 'https://twitter.com/asgconf'
     - title: youtube
@@ -36,7 +35,7 @@ params:
         link: /impressum
 menu:
   main:
-    - name: Tickets 
+    - name: Tickets
       identifier: tickets
       url: /#tickets
       parent: conference
@@ -49,17 +48,17 @@ menu:
       url: /#schedule
       parent: program
       weight: -300
-    - name: Code of Conduct 
+    - name: Code of Conduct
       identifier: coc
       url: /code-of-conduct
       parent: conference
       weight: -300
-    - name: CFP 
+    - name: CFP
       identifier: cfp
       url: /#cfp
       parent: conference
       weight: -300
-    - name: Venue 
+    - name: Venue
       identifier: venue
       url: /#venue
       parent: conference
@@ -78,7 +77,7 @@ menu:
     - name: Submit a talk
       identifier: submit-talk
       url: /#cfp
-      parent: program 
+      parent: program
       weight: -300
     - name: Become a sponsor
       identifier: become-a-sponsor
