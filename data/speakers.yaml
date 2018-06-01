@@ -65,8 +65,8 @@ speakers:
         link: https://github.com/rkt/rkt
       - name: Flatcar Linux
         link: https://flatcar-linux.org
-    twitter: alban
-    github: albcr
+    twitter: albcr
+    github: alban
   - name: Sargun Dhillon
     photo: sargun_dhillon.jpg
     org: Netflix
