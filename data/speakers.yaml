@@ -76,3 +76,29 @@ speakers:
         link: https://netflix.github.io/titus/
     twitter: sargun
     github: sargun
+  - name: Tejun Hoe
+    photo: tejun_hoe.jpg
+    org: Facebook
+    org_link: https://facebook.com
+    projects:
+      - name: Linux
+        link: https://www.kernel.org/
+    github: htejun
+  - name: Suchakra Sharma
+    photo: suchakra_sharma.jpg
+    org: Shiftleft
+    org_link: https://www.shiftleft.io/
+    projects:
+      - name: bcc
+        link: https://github.com/iovisor/bcc
+    twitter: tuxology
+    github: tuxology
+  - name: Chris Koch
+    photo: chris_koch.jpg
+    org: Google
+    org_link: https://google.com
+    projects:
+      - name: gVisor
+        link: https://github.com/google/gvisor
+    twitter: hugelgupf
+    github: hugelgupf
