@@ -100,5 +100,16 @@ speakers:
     projects:
       - name: gVisor
         link: https://github.com/google/gvisor
+      - name: u-boot
+        link: https://github.com/u-root/u-root
     twitter: hugelgupf
     github: hugelgupf
+  - name: Davis Strauss
+    photo: david_strauss.jpg
+    org: Pantheon
+    org_link: https://pantheon.io/
+    projects:
+      - name: systemd
+        link: https://github.com/systemd/systemd
+    twitter: DavidStrauss
+    github: davidstrauss
