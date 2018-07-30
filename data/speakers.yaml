@@ -113,3 +113,12 @@ speakers:
         link: https://github.com/systemd/systemd
     twitter: DavidStrauss
     github: davidstrauss
+  - name: Alexander Larsson
+    photo: alexander_larsson.jpg
+    org: Redhat
+    org_link: https://redhat.com/
+    projects:
+      - name: Flatpak
+        link: https://flatpak.org/
+    twitter: gnomealex
+    github: alexlarsson
