@@ -29,15 +29,6 @@ speakers:
         link: https://github.com/coreos/matchbox
     twitter: dghubble
     github: dghubble
-  - name: Cynthia Thomas
-    photo: cynthia_thomas.jpg
-    org: Covalent
-    org_link: http://covalent.io/
-    projects:
-      - name: Cilium Project
-        link: https://cilium.io
-    twitter: _techcet_
-    github: techcet
   - name: Antonio Murdaca
     photo: antonio_murdaca.jpg
     org: Red Hat
