@@ -48,6 +48,9 @@
     <div class="row section" id="featured-speakers">
         <div class="col pt-4 mt-5 mb-3">
             <h1>Featured speakers</h1>
+            <div class="alert alert-info" role="alert">
+              The list of <a href="https://cfp.all-systems-go.io/en/ASG2018/public/speakers">all speakers from All Systems Go! 2018</a> is now available.
+            </div>
             <div class="card-columns speakers">
             {{ range $i, $speaker := sort $.Site.Data.speakers.speakers "name" "asc" }}
                 {{ partial "featured-speaker.html" (dict "ctx" . "speaker" $speaker) }}
