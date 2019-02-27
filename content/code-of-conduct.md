@@ -1,8 +1,13 @@
 ---
 title: "Code of Conduct"
+pageName: code-of-conduct
 author: "Chris Kuehl"
 date: 2018-02-27T15:07:28+01:00
 draft: false
+type: "code-of-conduct"
+description: The All Systems Go! organizing team is dedicated to providing a
+            harassment-free conference experience for everyone. Our Code of Conduct defines guidelines and procedures that all
+            participants must follow in order to provide a great conference experience for everyone.
 ---
 
 [All Systems Go!](https://all-systems-go.io) is a community conference intended for networking and collaboration for the Linux community.

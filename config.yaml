@@ -1,90 +1,138 @@
 baseurl: '/'
 title: All Systems Go!
-canonifyurls: true
-paginate: 8
 theme: asg
 languageCode: en-us
-copyright: © 2018 All Systems Go! Team
+copyright: © All rights reserved - All Systems Go 2019
 pluralizelisttitles: 'false'
-permalinks:
-  blog: '/blog/:year/:month/:title/'
+
 author:
   name: All Systems Go! Team
-taxonomies:
-  tag: "tags"
+
 params:
   DateForm: 'Jan 2, 2006'
   Description: All Systems Go! conference website
   Author: All Systems Go! Team
   Email: org-team@all-systems-go.io
   Subtitle: The foundational user-space Linux conference
+
+  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
+  participationLink: https://cfp.all-systems-go.io
+  sponsorshipLink: ""
+
+  header:
+    eventDate: Sept. 28-30, 2019
+    eventPlace: Berlin
+
+  hero:
+    eventDate: September 28-30.2019
+    eventPlace: Venue TBD, Berlin Germany
+
+  event: 
+    description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
+        gathering place for both contributors and users of projects that make up the foundation of modern Linux
+        systems.
+
+  events:
+  - date: 27 FRI
+    event:
+      - title: Early registration
+        time: 6:30 - 21:00
+        place: Kinvolk office
+  - date: 28 sat
+    event:
+      - title: Conference - Day 1
+        time: 9:30 - 19:00
+        place: Spreewerkstätten
+      - title: Social event
+        time: 8:00 - Late
+        place: Mein Haus am See
+  - date: 29 sun
+    event:
+      - title: Conference - Day 2
+        time: 9:30 - 19:00
+        place: Spreewerkstätten
+  - date: 30 sun
+    event:
+      - title: Hackfest - Day 3
+        time: 9:30 - 19:00
+        place: Spreewerkstätten
+
+  tickets:
+    - type: student
+      price:
+        early: N/A
+        standard: N/A
+        late: N/A
+    - type: individual
+      price:
+        early: N/A
+        standard: N/A
+        late: N/A
+    - type: corporate
+      price:
+        early: N/A
+        standard: N/A
+        late: N/A
+
+  participation:
+    description:  "All Systems Go! wants to encourage and attract as broad an interest as
+          possible from projects that are within its focus area while at the same time ensuring that we get 
+          submissions and project involvement related to the following topics:"
+    topics: [
+      "Service management",
+      "Process isolation",
+      "Monitoring and tracing",
+      "Networking",
+      "Debugging and tooling",
+      "Security, etc."
+    ]
+
   social:
     - title: twitter
       url: 'https://twitter.com/asgconf'
+      image: 'twitter-icon'
+    - title: facebook
+      url: 'https://www.facebook.com/pg/kinvolk/events/?ref=page_internal'
+      image: 'fb-icon'
     - title: youtube
       url: 'https://www.youtube.com/channel/UCeLpDT5afyiwdbbg1EOxOtQ'
-  footer:
-    quicklinks:
-      - text: About
-        link: /about
-      - text: Careers
-        link: /careers
-      - text: Blog
-        link: /blog
-      - text: Impressum
-        link: /impressum
+      image: 'youtube-icon'
+
+  sponsors:
+  - type: Solar
+    sponsors:
+    - name: Kinvolk
+      link: https://kinvolk.io
+      logo: kinvolk.svg
+
+  lookBack:
+    year: 2018
+    description: 2018 was the inaugural edition of All Systems Go!. We welcomed over 200
+            attendees for 2 days of talks, discussions and collaborating. We captured some of that in the photos and
+            videos below.
+
+  venue:
+    description: All Systems Go! takes place in the heart of Berlin at Spreewerkstätten,a short
+          walk from Alexanderplatz and directly on the river Spree.
+    place: Molkenmarkt 2, 10179, Berlin
+    map: map.png
+    logo: sws-logo-black.svg
+
 menu:
   main:
-    - name: Tickets
-      identifier: tickets
-      url: /#tickets
-      parent: conference
-      weight: -300
-    - name: Program
-      identifier: program
-      weight: -150
-    - name: Schedule
-      identifier: schedule
-      url: /#schedule
-      parent: program
-      weight: -300
-    - name: Code of Conduct
-      identifier: coc
-      url: /code-of-conduct
-      parent: conference
-      weight: -300
-    - name: CFP
-      identifier: cfp
-      url: /#cfp
-      parent: conference
-      weight: -300
-    - name: Venue
-      identifier: venue
-      url: /#venue
-      parent: conference
-      weight: -300
-    - name: Conference
-      identifier: conference
-      weight: -200
-    - name: Sponsorship
-      identifier: sponsorship
-      weight: -200
-    - name: Sponsors
-      identifier: sponsors
-      url: /#sponsors
-      parent: sponsorship
-      weight: -300
-    - name: Submit a talk
-      identifier: submit-talk
-      url: /#cfp
-      parent: program
-      weight: -300
-    - name: Become a sponsor
-      identifier: become-a-sponsor
-      url: https://github.com/all-systems-go-conf/conference/blob/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!%202018.pdf
-      parent: sponsorship
-      weight: -200
-    - name: Blog
-      identifier: blog
-      url: /blog/
+    - identifer: schedule
+      name: Schedule
+      url: "#schedule"
+      weight: -110
+    - identifer: speakers
+      name: Speakers
+      url: "#speakers"
       weight: -100
+    - identifer: conduct
+      name: Code of conduct
+      url: "#conduct"
+      weight: -90
+    - identifer: sponsorship
+      name: Sponsorship
+      url: "#sponsor"
+      weight: -80

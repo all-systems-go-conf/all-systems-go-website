@@ -1,10 +1,26 @@
-{{ partial "head.html" . }}
-
-    <!-- Page Header -->
-    <header class="intro-header">
-      <div id="jumbotron">
-        <div class="container">
-          <h1 class="title">{{ .Title }}</h1>
-        </div>
+<header class="header">
+  <div class="header__container">
+    <div class="header__wrapper">
+      <a class="header__logo" href="{{ .Site.BaseURL }}">
+        <img src="/images/logo/logo.svg" width="200" height="47" alt="All systems go logotype" draggable="false">
+      </a>
+      <div class="header__hamburger">
+        <span></span>
+        <span></span>
       </div>
-    </header>
+    </div>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#schedule">Schedule</a></li>
+        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#speakers">Speakers</a></li>
+        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#conduct">Code of conduct</a></li>
+        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#sponsor">Sponsorship</a></li>
+      </ul>
+    </nav>
+    <div class="header__date">
+      <p>{{ .Site.Params.Header.eventDate }}</p> 
+      <p>{{ .Site.Params.Header.eventPlace }}</p>
+    </div>
+    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">Register</a>
+  </div>
+</header>

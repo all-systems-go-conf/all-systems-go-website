@@ -1,5 +1,239 @@
-{{ partial "frontpage_header.html" .}}
+{{ partial "head.html" . }}
 
-{{ .Content }}
+<div id="particles-js"></div>
 
-{{ partial "footer.html" .}}
+{{ partial "frontpage_header.html" . }}
+
+<main>
+  <section class="hero">
+      <div class="hero__social">
+      
+        {{ partial "socials.html" . }}
+        
+      </div>
+      <div class="hero__image-wrapper">
+        <picture>
+          <source srcset="/images/hero-image-mobile.svg" media="(max-width: 767px)">
+          <img src="/images/hero-image.svg" alt="hero image" draggable="false">
+        </picture>
+        <div class="hero__scroll-icon hero__scroll-icon--mobile">
+          <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3"/>
+            <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white"/>
+            </svg>          
+        </div>
+
+        <div class="hero__date-wrapper">
+            <span class="hero__date">{{ .Site.Params.Hero.eventDate }}</span>
+            {{ .Site.Params.Hero.eventPlace }}
+          </div>
+      </div>
+      <div class="hero__scroll-icon">
+        <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3"/>
+          <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white"/>
+          </svg>          
+      </div>
+    </section>
+
+    <section class="about">
+      <p class="about__description">{{ .Site.Params.Event.description }}</p>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <h2 class="schedule__title page-title">schedule for september 2019</h2>
+      <a class="schedule__link" href="/code-of-conduct">Read our code of conduct</a>
+      {{ range .Site.Params.events }}
+      <div class="schedule__event-block">
+        <p class="schedule__event-day">{{.date}}</p>
+        {{ range .event }}
+          <div class="schedule__event-row">
+            <span class="schedule__event-time">{{ .time }}</span>
+            <span class="schedule__event">{{ .title }} <span class="schedule__event-place">({{ .place }})</span></span>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+    </section>
+
+    <section class="speakers" id="speakers">
+      {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }} 
+      <h2 class="speakers__title page-title">Featured speakers</h2>        
+      <div class="speakers__swiper-container">
+        <div class="speakers__list swiper-wrapper">
+          
+          {{ with .Site.Data.speakers }}
+          {{ range .speakers }}
+          <div class="speakers__item swiper-slide">
+            <img class="speakers__photo" src="/images/speakers/{{ .image }}" width="260" height="260" alt="speaker photo"
+              draggable="false">
+            <img class="speakers__background" src="/images/icons/arrows-speakers.svg" alt="">
+            <p class="speakers__name">{{ .name }}</p>
+            <div class="speakers__company">
+              <span>{{ .company }}:</span>
+              <span>{{ .projects }}</span>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          {{ else }}
+            <h2 class="speakers__title speakers__coming-title page-title">Speakers <br />coming soon</h2>
+          {{ end }}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="tickets">
+      <h2 class="tickets__title page-title">tickets</h2>
+      <div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>
+
+      <div class="tickets__wrapper">
+        {{ range .Site.Params.tickets }}
+          <div class="tickets__block">
+            <h3 class="tickets__sub-title">{{ .type }}:</h3>
+            <ul class="tickets__list">
+              <li class="tickets__item tickets__item--{{ .type }}">
+                <div>Early</div>
+                <div class="tickets__price">{{ .price.early }}</div>
+              </li>
+              <li class="tickets__item tickets__item--{{ .type }}">
+                <div>standard</div>
+                <div class="tickets__price">{{ .price.standard }}</div>
+              </li>
+              <li class="tickets__item tickets__item--{{ .type }}">
+                <div>Late</div>
+                <div class="tickets__price">{{ .price.late }}</div>
+              </li>
+            </ul>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="conduct" id="conduct">
+        <div class="conduct__wrapper">
+          <h2 class="conduct__title page-title">Code of Conduct</h2>
+          {{ with .Site.GetPage "code-of-conduct" }}
+          <p class="conduct__description">{{ .Params.description }}</p>
+          {{ end }}
+          <a class="conduct__link" href="/code-of-conduct">Read our code of conduct</a>
+        </div>
+        <div class="conduct__photo-wrapper">
+          <img class="conduct__photo" src="/images/code-of-conduct.png" width="360" height="573" alt="man telling about conduct"
+            draggable="false">
+        </div>
+      </section>
+
+      <section class="participation">
+        <div class="participation__photo-wrapper">
+          <img class="participation__photo" src="/images/participation-photo.png" width="360" height="573"
+            alt="man telling about conduct" draggable="false">
+        </div>
+        <div class="participation__wrapper">
+          <h2 class="participation__title page-title">Call for Participation</h2>
+          {{ with .Site.Params.participation }}
+          <p class="participation__description">{{ .description }}</p>
+          <ul class="participation__list">
+            {{ range .topics }}
+            <li class="participation__item">{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="_blank">Submit your presentation</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="sponsors" id="sponsor">
+      <h2 class="sponsors__title page-title">sponsors</h2>
+      {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }} 
+      <p class="sponsors__description">All Systems Go! is only possibly because of the generous support from these
+          sponsors.</p>
+      {{ range .Site.Params.sponsors }}
+          <div class="sponsors__block">
+            <h3>{{ .type }}:</h3>
+            <ul class="sponsors__list">
+              {{ range .sponsors }}
+                <li class="sponsors__item">
+                  <a href="{{ .link }}" target="_blank">
+                    <img src="/images/sponsors/{{ .logo }}" alt="{{ .logo }}" class="sponsor__image">
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      {{ end }}
+      <a class="sponsors__link" href="{{ .Site.Params.sponsorshipLink }}"><span>Read our&nbsp;</span>sponsorship opportunities</a>
+    </section>
+
+    <section class="look-back">
+      <div class="look-back__container">
+        {{ with .Site.Params.lookBack }}
+        <h2 class="look-back__title page-title">A look back at {{ .year }}</h2>
+        <div class="look-back__wrapper">
+          <p class="look-back__description">{{ .description }}</p>
+          <a class="look-back__button btn" href="https://www.flickr.com/photos/139110107@N04/sets/72157706243921245"
+            target="_blank">
+            <img src="/images/icons/flickr-icon.svg" alt="flickr icon">
+          </a>
+        </div>
+        {{ end }}
+        <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
+        title="All Systems Go! 2018"><img src="https://farm5.staticflickr.com/4872/46026369395_8813369b89_z.jpg"
+          width="640" height="360" alt="All Systems Go! 2018"></a>
+      </div>
+    </section>
+
+    <section class="video-content">
+      <h2 class="video-content__title page-title">Talks from 2018</h2>
+      <div class="video-content__wrapper">
+        <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9Eio5o5j4Uth_-Mt0FPrYXNwx"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="venue">
+      <div class="venue__map-wrapper">
+          {{ with .Site.Params.venue }}
+        <div class="venue__map">
+          <img class="venue__map-image" src="/images/{{ .map }}" alt="map" draggable="false">
+        </div>
+        <div class="venue__map-wrapper-iner">
+          <img src="/images/icons/{{ .logo }}" alt="logo" draggable="false">
+          <div class="venue__block">
+            <h4>Zentrale Lage</h4>
+            <p>{{ .place }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="venue__content-wrapper">
+        <h2 class="venue__title page-title">Venue</h2>
+        <p class="venue__description">{{ .description }}</p>
+
+        {{ end }}
+
+        <form class="venue__form validate" action="https://all-systems-go.us14.list-manage.com/subscribe/post?u=1357cb4149750098f861b3a0d&amp;id=727559bb60"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <label for="input">Sign up for newsletter</label>
+          <input class="required email" value="" type="email" id="input" name="EMAIL" placeholder="Enter your email address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1357cb4149750098f861b3a0d_727559bb60"
+              tabindex="-1" value=""></div>
+          <div id="mce-responses" class="clear">
+            <div class="response response-error" id="mce-error-response" style="display:none"></div>
+            <div class="response response-success" id="mce-success-response" style="display:none"></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <button class="venue__form--button button button--submit" type="submit" name="subscribe" id="mc-embedded-subscribe"
+            disabled>Submit</button>
+        </form>
+      </div>
+    </section>
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ with .Site.GetPage "/code-of-conduct.md" }}
+  <div class="code-of-conduct">
+    {{ .Content }}
+  </div>
+{{ end }}
+{{ end }}
