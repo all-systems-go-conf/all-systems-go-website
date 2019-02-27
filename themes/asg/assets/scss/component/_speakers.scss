@@ -1,0 +1,159 @@
+.speakers {
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 60px 180px;
+}
+
+.speakers__title {
+  position: relative;
+  max-width: 370px;
+  margin: 0 auto 110px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: -130px;
+    left: calc(50% - 160px);
+
+    background-image: url("../../images/blue-arrow.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+.speakers__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.speakers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.speakers__item {
+  position: relative;
+  max-width: 260px;
+  margin-bottom: 80px;
+  text-align: center;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.speakers__item:nth-child(even) {
+  margin-top: 140px;
+}
+
+.speakers__photo {
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.speakers__background {
+  position: absolute;
+  width: 94%;
+  top: 3%;
+  left: 3%;
+}
+
+.speakers__name {
+  margin-bottom: 5px;
+  font-family: $secondFont;
+  font-size: 2.5rem;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.speakers__company {
+  font-size: 1.5rem;
+  font-weight: $fontBold;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.speakers__company span {
+  display: block;
+}
+
+.speakers__coming-title {
+  max-width: 540px;
+  text-align: center;
+}
+
+@include media-breakpoint-down(md) {
+  .speakers {
+    padding:0 20px 80px;
+    margin-bottom: 40px;
+  }
+  .speakers__title {
+    margin-bottom: 60px;
+    text-align: center;
+
+    &::before {
+      top: -170px;
+      transform: scale(0.6);
+    }
+  }
+
+  .speakers__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .speakers__item {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .speakers__item:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .speakers__name {
+    font-size: 2rem;
+  }
+
+  .speakers__background {
+    max-width: 250px;
+    left: calc(50% - 125px);
+    top: 2%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .speakers__company span {
+    display: inline-block;
+  }
+  .speakers__name {
+    font-size: 1.6rem;
+  }
+
+  .speakers__company {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .speakers__background {
+    top: 3%;
+    left: 3%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .speakers {
+    max-width: 1400px;
+  }
+  .speakers__title {
+    margin-bottom: 200px;
+    transform: scale(1.2);
+  }
+}

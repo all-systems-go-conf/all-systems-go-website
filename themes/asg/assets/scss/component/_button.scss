@@ -1,0 +1,99 @@
+.btn {
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 0;
+  cursor: pointer;
+  font-family: $mainFont;
+  font-weight: $fontBold;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+a.btn {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-simple{
+  height: 60px;
+  min-width: 120px;
+
+  background-color: $colorBlue;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.btn-simple:hover {
+  background-color: $colorRed;
+  color: $colorWhite;
+}
+
+.button--submit {
+  position: absolute;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  bottom: 20%;
+  
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #39393c;
+  transition: transform 0.3s ease;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: calc(50% - 4px);
+    background-image: url("../../images/icons/button-arrow-icon.svg");
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .button--submit {
+    position: relative;
+    width: 280px;
+    height: 55px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: $colorWhite;
+    font-weight: $fontBold;
+    border-radius: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.button--submit:focus{
+  outline: none;
+}
+
+.button--submit:hover{
+  transform: scale(0.93);
+}
+
+.button--submit:disabled {
+  background-color: $colorGrey;
+}
+
+.button--submit:disabled:hover {
+  background-color: $colorGrey;
+  transform: scale(1);
+}

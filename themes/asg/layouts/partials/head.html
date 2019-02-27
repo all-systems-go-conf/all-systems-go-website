@@ -10,27 +10,25 @@
 
     <title>{{ .Title }} | {{ .Site.Params.Subtitle }}</title>
 
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/favicon/favicon128.png">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
     {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
 
-    <!-- Custom CSS -->
-    <link href="{{ .Site.BaseURL }}css/asg.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      {{ $options := (dict "targetPath" "/css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+      {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options }}
 
-    <!-- Custom Fonts -->
-    <link href="{{ .Site.BaseURL }}css/fontawesome.min.css"    rel="stylesheet" type="text/css">
-<!-- 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+      <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="{{ .Site.BaseURL }}js/html5shiv.min.js"></script>
-        <script src="{{ .Site.BaseURL }}js/respond.min.js"></script>
-    <![endif]-->
 </head>
 
-<body>
-    {{ partial "navbar.html" . }}
+<body class="{{ if .IsHome }}main-page{{ end }}">
+
 

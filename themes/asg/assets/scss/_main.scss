@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-weight: $fontRegular;
+  color: $colorWhite;
+  overflow-x: hidden;
+  background-color: $colorBlack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+
+.container {
+  width: 100%;
+  min-width: 280px;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+a {
+  color: $colorWhite;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.page-title {
+  font-family: $mainFont;
+  color: $colorWhite;
+  font-size: 6rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+canvas {
+  display: block;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@include media-breakpoint-down(md) {
+  .page-title {
+    font-size: 3.2rem;
+    letter-spacing: 4px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  background: $colorGrey;
+  opacity: 0.8;
+}
+.swiper-pagination-bullet-active {
+  background: $colorBlue;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: 30px;
+}
+
+.social__ico{
+  fill: #fff;
+
+  transition: fill 0.5s;
+}
+
+a:hover .twitter-icon {
+  fill: #4BABE7;
+}
+
+a:hover .youtube-icon {
+  fill: #EA3323;
+}
+
+a:hover .fb-icon {
+  fill: #405898;
+}

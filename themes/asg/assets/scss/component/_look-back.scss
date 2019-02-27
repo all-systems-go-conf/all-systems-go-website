@@ -1,0 +1,109 @@
+.look-back {
+  padding-bottom: 170px;
+}
+
+.look-back__container {
+  position: relative;
+  max-width: 1280px;
+  padding: 80px 60px 65px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 94px;
+    height: 59px;
+    top: 0;
+    left: 60px;
+    background-image: url("../../images/icons/eye-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.look-back__title {
+  max-width: 565px;
+  margin-bottom: 30px;
+}
+
+.look-back__wrapper {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.look-back__description {
+  font-size: 1.8rem;
+  line-height: 1.8em;
+  max-width: 540px;
+}
+
+.look-back__button {
+  width: 110px;
+  height: 45px;
+  border: 2px solid $colorWhite;
+  transition: background-color 0.4s;
+}
+
+.look-back__button img {
+  margin-left: 12px;
+  width: 79px;
+}
+
+.look-back__button:hover {
+  background-color: $colorWhite;
+}
+
+.look-back__img  {
+  max-height: 263px;
+  width: auto;
+  cursor: pointer;
+}
+
+@include media-breakpoint-down(md) {
+  .look-back {
+    padding-bottom: 80px;
+  }
+  .look-back__title {
+    font-size: 3rem;
+  }
+
+  .look-back__description {
+    font-size: 1.6rem;
+    max-width: 460px;
+  }
+  .look-back__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .look-back__container:before {
+    left: 20px;
+    transform: scale(0.8);
+  }
+  .look-back__img {
+    max-height: 200px;
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .look-back__wrapper {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .look-back__description {
+    margin-bottom: 30px;
+  }
+  .look-back__img {
+    max-height: 180px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .look-back{
+    margin-bottom: 200px;
+    transform: scale(1.2);
+  }
+}
