@@ -17,8 +17,7 @@ params:
 
   ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
   participationLink: https://cfp.all-systems-go.io
-  sponsorshipLink: ""
-
+  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
   header:
     eventDate: Sept. 28-30, 2019
     eventPlace: Berlin
@@ -92,7 +91,7 @@ params:
       url: 'https://twitter.com/asgconf'
       image: 'twitter-icon'
     - title: facebook
-      url: 'https://www.facebook.com/pg/kinvolk/events/?ref=page_internal'
+      url: 'https://www.facebook.com/events/312881192699912/'
       image: 'fb-icon'
     - title: youtube
       url: 'https://www.youtube.com/channel/UCeLpDT5afyiwdbbg1EOxOtQ'
