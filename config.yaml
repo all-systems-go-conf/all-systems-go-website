@@ -59,19 +59,19 @@ params:
   tickets:
     - type: student
       price:
-        early: N/A
-        standard: N/A
-        late: N/A
+        early: €35
+        standard: €45
+        late: €55
     - type: individual
       price:
-        early: N/A
-        standard: N/A
-        late: N/A
+        early: €200
+        standard: €230
+        late: €250
     - type: corporate
       price:
-        early: N/A
-        standard: N/A
-        late: N/A
+        early: €390
+        standard: €44
+        late: €490
 
   participation:
     description:  "All Systems Go! wants to encourage and attract as broad an interest as
