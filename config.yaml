@@ -32,25 +32,25 @@ params:
         systems.
 
   events:
-  - date: 27 FRI
+  - date: 19 Thu
     event:
       - title: Early registration
-        time: 6:30 - 21:00
+        time: 18:30 - 21:00
         place: Kinvolk office
-  - date: 28 sat
+  - date: 20 Fri
     event:
       - title: Conference - Day 1
         time: 9:30 - 19:00
         place: Spreewerkstätten
       - title: Social event
-        time: 8:00 - Late
+        time: 20:00 - Late
         place: Mein Haus am See
-  - date: 29 sun
+  - date: 21 Sat
     event:
       - title: Conference - Day 2
         time: 9:30 - 19:00
         place: Spreewerkstätten
-  - date: 30 sun
+  - date: 22 Sun
     event:
       - title: Hackfest - Day 3
         time: 9:30 - 19:00
