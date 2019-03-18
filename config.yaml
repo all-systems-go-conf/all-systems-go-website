@@ -119,6 +119,10 @@ params:
 
 menu:
   main:
+    - identifer: tickets
+      name: Tickets
+      url: "#tickets"
+      weight: -120
     - identifer: schedule
       name: Schedule
       url: "#schedule"
