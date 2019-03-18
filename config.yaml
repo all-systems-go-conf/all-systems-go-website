@@ -70,7 +70,7 @@ params:
     - type: corporate
       price:
         early: €390
-        standard: €44
+        standard: €440
         late: €490
 
   participation:
