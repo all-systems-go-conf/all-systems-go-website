@@ -103,6 +103,9 @@ params:
     - name: Kinvolk
       link: https://kinvolk.io
       logo: kinvolk.svg
+    - name: Facebook
+      link: https://code.fb.com/
+      logo: facebook.svg
 
   lookBack:
     year: 2018
