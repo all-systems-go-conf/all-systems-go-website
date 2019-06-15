@@ -111,6 +111,9 @@ params:
       logo: facebook.svg
   - type: Lunar
     sponsors:
+    - name: Pantheon
+      link: https://www.pantheon.io/
+      logo: pantheon.svg
     - name: Red Hat
       link: https://www.redhat.com/
       logo: redhat.svg
