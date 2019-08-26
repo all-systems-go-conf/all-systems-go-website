@@ -22,10 +22,6 @@ params:
     eventDate: Sept. 20-22, 2019
     eventPlace: Berlin
 
-  hero:
-    eventDate: September 20-22, 2019
-    eventPlace: Spreewerkstätten, Berlin Germany
-
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
         gathering place for both contributors and users of projects that make up the foundation of modern Linux
