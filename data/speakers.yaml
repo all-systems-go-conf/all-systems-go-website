@@ -1,1 +1,6 @@
-speakers: ""
+speakers:
+  - name: Dan Walsh
+    image: dan-walsh.jpg
+    company: Red Hat
+    company_link: https://www.redhat.com
+    projects: systemd
