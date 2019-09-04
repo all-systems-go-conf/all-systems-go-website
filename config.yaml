@@ -121,6 +121,9 @@ params:
     - name: Grafana
       link: https://www.grafana.com/
       logo: grafana-labs.svg
+    - name: Microsoft
+      link: https://www.microsoft.com/
+      logo: microsoft.svg
   
   lookBack:
     year: 2018
