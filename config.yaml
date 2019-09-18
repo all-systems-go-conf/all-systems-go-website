@@ -130,11 +130,11 @@ params:
     description: All Systems Go! 2018 welcomed more than 200 attendees for 3 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
 
   venue:
-    description: All Systems Go! takes place in the heart of Berlin at Spreewerkstätten,a short
+    description: All Systems Go! takes place in the heart of Berlin at Alte Münze,a short
           walk from Alexanderplatz and directly on the river Spree.
-    place: Molkenmarkt 2, 10179, Berlin
+    place: Am Krögel 2 10179 Berlin
     map: map.png
-    logo: sws-logo-black.svg
+    logo: alte-munze-logo.svg
 
 menu:
   main:
