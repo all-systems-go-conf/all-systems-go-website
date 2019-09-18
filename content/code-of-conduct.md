@@ -139,8 +139,8 @@ If some attendees were angered by the incident, it is best to apologize to them 
 
 If at all possible, all reports should be made directly to one of the following contacts.
 
-* Lexi Nadolski, lexi@kinvolk.io | +49 000 00 00 00
-* Lars Karlitski, lars@karlitski.net | +49 000 00 00 00
+* Lexi Nadolski, lexi@kinvolk.io | +49 152 0873 9817 
+* Lars Karlitski, lars@karlitski.net | +49 176 3868 0483
 
 ## License
 
