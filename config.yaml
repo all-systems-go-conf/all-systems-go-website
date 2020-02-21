@@ -2,7 +2,7 @@ baseurl: '/'
 title: All Systems Go!
 theme: asg
 languageCode: en-us
-copyright: © All rights reserved - All Systems Go! 2019
+copyright: © All rights reserved - All Systems Go! 2020
 pluralizelisttitles: 'false'
 
 author:
@@ -15,11 +15,11 @@ params:
   Email: org-team@all-systems-go.io
   Subtitle: The foundational user-space Linux conference
 
-  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
-  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
-  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
+  ticketsLink: 
+  participationLink: ''
+  sponsorshipLink: 
   header:
-    eventDate: Sept. 20-22, 2019
+    eventDate: Sept. 08-10, 2020
     eventPlace: Berlin
 
   event: 
@@ -28,46 +28,46 @@ params:
         systems.
 
   events:
-  - date: 19 Thu
+  - date: 07 Thu
     event:
       - title: Early registration
         time: 18:30 - 21:00
-        place: Kinvolk office
-  - date: 20 Fri
+        place: TBA
+  - date: 08 Fri
     event:
       - title: Conference - Day 1
         time: 9:30 - 19:00
-        place: Spreewerkstätten
-      - title: Social event
-        time: 20:00 - Late
-        place: Mein Haus am See
-  - date: 21 Sat
+        place: TBA
+      # - title: Social event
+      #   time: 20:00 - Late
+      #   place: TBA
+  - date: 09 Sat
     event:
       - title: Conference - Day 2
         time: 9:30 - 19:00
-        place: Spreewerkstätten
-  - date: 22 Sun
+        place: TBA
+  - date: 10 Sun
     event:
       - title: Hackfest - Day 3
         time: 9:30 - 19:00
-        place: Spreewerkstätten
+        place: TBA
 
-  tickets:
-    - type: student
-      price:
-        early: €35
-        standard: €45
-        late: €55
-    - type: individual
-      price:
-        early: €200
-        standard: €230
-        late: €250
-    - type: corporate
-      price:
-        early: €390
-        standard: €440
-        late: €490
+  # tickets:
+  #   - type: student
+  #     price:
+  #       early: €35
+  #       standard: €45
+  #       late: €55
+  #   - type: individual
+  #     price:
+  #       early: €200
+  #       standard: €230
+  #       late: €250
+  #   - type: corporate
+  #     price:
+  #       early: €390
+  #       standard: €440
+  #       late: €490
 
   participation:
     description:  "All Systems Go! wants to encourage and attract as broad an interest as
@@ -87,7 +87,7 @@ params:
       url: 'https://twitter.com/asgconf'
       image: 'twitter-icon'
     - title: facebook
-      url: 'https://www.facebook.com/events/312881192699912/'
+      url: ''
       image: 'fb-icon'
     - title: youtube
       url: 'https://www.youtube.com/channel/UCeLpDT5afyiwdbbg1EOxOtQ'
@@ -96,45 +96,20 @@ params:
   sponsors:
   - type: Solar
     sponsors:
-    - name: Aiven
-      link: https://www.aiven.io/
-      logo: aiven.svg
     - name: Kinvolk
       link: https://kinvolk.io
       logo: kinvolk.svg
-    - name: Facebook
-      link: https://code.fb.com/
-      logo: facebook.svg
-    - name: Packet
-      link: https://packet.com/
-      logo: packet.png
-  - type: Lunar
-    sponsors:
-    - name: Pantheon
-      link: https://www.pantheon.io/
-      logo: pantheon.svg
-    - name: Red Hat
-      link: https://www.redhat.com/
-      logo: redhat.svg
-  - type: Terrestrial
-    sponsors:
-    - name: Grafana
-      link: https://www.grafana.com/
-      logo: grafana-labs.svg
-    - name: Microsoft
-      link: https://www.microsoft.com/
-      logo: microsoft.svg
   
   lookBack:
-    year: 2018
-    description: All Systems Go! 2018 welcomed more than 200 attendees for 3 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
+    year: 2019
+    description: All Systems Go! 2019 welcomed more than 200 attendees for 3 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
 
-  venue:
-    description: All Systems Go! takes place in the heart of Berlin at Alte Münze,a short
-          walk from Alexanderplatz and directly on the river Spree.
-    place: Am Krögel 2 10179 Berlin
-    map: map.png
-    logo: alte-munze-logo.svg
+  # venue:
+  #   description: All Systems Go! takes place in the heart of Berlin at Alte Münze,a short
+  #         walk from Alexanderplatz and directly on the river Spree.
+  #   place: Am Krögel 2 10179 Berlin
+  #   map: map.png
+  #   logo: alte-munze-logo.svg
 
 menu:
   main:

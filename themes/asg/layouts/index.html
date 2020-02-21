@@ -36,8 +36,8 @@
     </section>
 
     <section class="schedule" id="schedule">
-      <h2 class="schedule__title page-title">2019 Conference Schedule</h2>
-      <a class="schedule__link" href="https://cfp.all-systems-go.io/ASG2019/schedule/">View the full schedule!</a>
+      <h2 class="schedule__title page-title">2020 Conference Schedule</h2>
+      <a class="schedule__link" href="">Full schedule will be released by Mid of May</a>
       {{ range .Site.Params.events }}
       <div class="schedule__event-block">
         <p class="schedule__event-day">{{.date}}</p>
@@ -51,7 +51,7 @@
     {{ end }}
     </section>
 
-    <section class="speakers" id="speakers">
+    <!-- <section class="speakers" id="speakers">
       {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }} 
       <h2 class="speakers__title page-title">Featured speakers</h2>        
       <div class="speakers__swiper-container">
@@ -78,12 +78,12 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 
     <section class="tickets" id="tickets">
       <h2 class="tickets__title page-title">tickets</h2>
-      <div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>
-
+      <!-- <div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div> -->
+      <div class="tickets__text"><span>Tickets are will be </span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">available! Soon</a></div>
       <div class="tickets__wrapper">
         {{ range .Site.Params.tickets }}
           <div class="tickets__block">
@@ -137,7 +137,7 @@
             {{ end }}
           </ul>
           {{ end }}
-          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">The CFP is now closed</a>
+          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">The CFP is now Open</a>
         </div>
       </section>
     </div>
@@ -171,22 +171,22 @@
         <h2 class="look-back__title page-title">A look back at {{ .year }}</h2>
         <div class="look-back__wrapper">
           <p class="look-back__description">{{ .description }}</p>
-          <a class="look-back__button btn" href="https://www.flickr.com/photos/139110107@N04/sets/72157706243921245"
+          <a class="look-back__button btn" href="https://www.flickr.com/photos/139110107@N04/sets/72157711260797017"
             target="_blank">
             <img src="/images/icons/flickr-icon.svg" alt="flickr icon">
           </a>
         </div>
         {{ end }}
-        <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
+        <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/sets/72157711260797017/"
         title="All Systems Go! 2018"><img src="https://farm5.staticflickr.com/4872/46026369395_8813369b89_z.jpg"
-          width="640" height="360" alt="All Systems Go! 2018"></a>
+          width="640" height="360" alt="All Systems Go! 2019"></a>
       </div>
     </section>
 
     <section class="video-content">
-      <h2 class="video-content__title page-title">Talks from 2018</h2>
+      <h2 class="video-content__title page-title">Talks from 2019</h2>
       <div class="video-content__wrapper">
-        <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EipxBYJxx6-Q8ED5EXlQ4Nyp"
+        <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9Eip_9wWy3Qr2kqKkn7Vr-9ek"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
         </iframe>
       </div>
