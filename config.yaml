@@ -15,12 +15,23 @@ params:
   Email: org-team@all-systems-go.io
   Subtitle: The foundational user-space Linux conference
 
-  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
-  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
-  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
+  topbanner:
+    show: true  # true / false
+    link: 
+    bgcolor: "red"
+    textcolor: "#FFFFFF"
+    text: All Systems Go! 2020 is cancelled until it is safe for our community to get together in-person. We hope you are all staying safe and hope to see you in 2021!
+
+  # ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
+  # participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
+  # sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
   header:
-    eventDate: Sept. 20-22, 2019
+    eventDate: Comming Soon
     eventPlace: Berlin
+
+  # header:
+  #   eventDate: Sept. 20-22, 2019
+  #   eventPlace: Berlin
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
@@ -162,3 +173,5 @@ menu:
       name: Sponsorship
       url: "#sponsor"
       weight: -80
+
+#  hugo server --theme=asg --watch --disableFastRender
