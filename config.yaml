@@ -17,10 +17,10 @@ params:
 
   topbanner:
     show: true  # true / false
-    link: 
+    link: https://hello.com
     bgcolor: "red"
     textcolor: "#FFFFFF"
-    text: All Systems Go! 2020 is cancelled until it is safe for our community to get together in-person. We hope you are all staying safe and hope to see you in 2021!
+    text: All Systems Go! 2020 is officially cancelled. Stay safe and see you in 2021!
 
   # ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
   # participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'

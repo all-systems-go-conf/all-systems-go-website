@@ -1,9 +1,8 @@
 {{ if .Site.Params.topbanner.show }}
     <div align="center">
         <a {{ if .Site.Params.topbanner.link }}href="{{ .Site.Params.topbanner.link }}" target="_blank"{{ end }}>
-        <marquee bgcolor="{{.Site.Params.topbanner.bgcolor}}" direction="left" height:="" loop="infinite" scrollamount="8" scrolldelay="2" width="100%">
-        <span style="font-size: 18px;color:{{.Site.Params.topbanner.textcolor}}">
-        {{ .Site.Params.topbanner.text }}</span></marquee>
+        <span style="font-size: 18px;color:{{.Site.Params.topbanner.textcolor}};background-color: {{.Site.Params.topbanner.bgcolor}};">
+        {{ .Site.Params.topbanner.text }}</span>
         </a>
       </div>
 {{ end }}
