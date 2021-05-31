@@ -1,4 +1,4 @@
-speakers:
+ speakers:
   - name: Alban Crequy
     image: alban-crequy.jpg
     company: Kinvolk
@@ -44,4 +44,4 @@ speakers:
   - name: Tejun Heo
     image: tejun-hoe.jpg
     company: Facebook
-    company_link: https://www.facebook.com/
+    company_link: https://www.facebook.com/ 

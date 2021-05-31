@@ -35,7 +35,7 @@
       <p class="about__description">{{ .Site.Params.Event.description }}</p>
     </section>
 
-    <section class="schedule" id="schedule">
+  <!--  <section class="schedule" id="schedule">
       <h2 class="schedule__title page-title">2019 Conference Schedule</h2>
       <a class="schedule__link" href="https://cfp.all-systems-go.io/ASG2019/schedule/">View the full schedule!</a>
       {{ range .Site.Params.events }}
@@ -49,9 +49,9 @@
         {{ end }}
       </div>
     {{ end }}
-    </section>
+    </section> -->
 
-    <section class="speakers" id="speakers">
+  <!--  <section class="speakers" id="speakers">
       {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }} 
       <h2 class="speakers__title page-title">Featured speakers</h2>        
       <div class="speakers__swiper-container">
@@ -78,7 +78,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> 
 
     <section class="tickets" id="tickets">
       <h2 class="tickets__title page-title">tickets</h2>
@@ -105,7 +105,7 @@
           </div>
         {{ end }}
       </div>
-    </section>
+    </section> -->
 
     <div class="container">
       <section class="conduct" id="conduct">
@@ -137,13 +137,13 @@
             {{ end }}
           </ul>
           {{ end }}
-          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">The CFP is now closed</a>
+          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">CFP Coming Soon</a>
         </div>
       </section>
     </div>
 
     <section class="sponsors" id="sponsor">
-      <h2 class="sponsors__title page-title">sponsors</h2>
+      <h2 class="sponsors__title page-title"> Past sponsors</h2>
       {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }} 
       <p class="sponsors__description">All Systems Go! is only possibly because of the generous support from these
           sponsors.</p>
@@ -162,7 +162,7 @@
           </div>
         {{ end }}
       {{ end }}
-      <a class="sponsors__link" href="{{ .Site.Params.sponsorshipLink }}"><span>Read our&nbsp;</span>sponsorship opportunities</a>
+    <!--  <a class="sponsors__link" href="{{ .Site.Params.sponsorshipLink }}"><span>Read our&nbsp;</span>sponsorship opportunities</a> -->
     </section>
 
     <section class="look-back">
@@ -171,29 +171,31 @@
         <h2 class="look-back__title page-title">A look back at {{ .year }}</h2>
         <div class="look-back__wrapper">
           <p class="look-back__description">{{ .description }}</p>
-          <a class="look-back__button btn" href="https://www.flickr.com/photos/139110107@N04/sets/72157706243921245"
+          <a class="look-back__button btn" href="https://flic.kr/s/aHsmHzDhzF"
             target="_blank">
             <img src="/images/icons/flickr-icon.svg" alt="flickr icon">
           </a>
         </div>
         {{ end }}
-        <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
+       <!-- <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
         title="All Systems Go! 2018"><img src="https://farm5.staticflickr.com/4872/46026369395_8813369b89_z.jpg"
-          width="640" height="360" alt="All Systems Go! 2018"></a>
+          width="640" height="360" alt="All Systems Go! 2018"></a> -->
+          <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157711260797017" title="All Systems Go! 2019"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2019"></a>
       </div>
     </section>
 
     <section class="video-content">
-      <h2 class="video-content__title page-title">Talks from 2018</h2>
+      <h2 class="video-content__title page-title">Talks from 2019</h2>
       <div class="video-content__wrapper">
-        <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EipxBYJxx6-Q8ED5EXlQ4Nyp"
+       <!-- <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EipxBYJxx6-Q8ED5EXlQ4Nyp"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
-        </iframe>
+        </iframe> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D_MAM3wcjVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
 
     <section class="venue">
-      <div class="venue__map-wrapper">
+    <!--  <div class="venue__map-wrapper">
           {{ with .Site.Params.venue }}
         <div class="venue__map">
           <img class="venue__map-image" src="/images/{{ .map }}" alt="map" draggable="false">
@@ -205,12 +207,12 @@
             <p>{{ .place }}</p>
           </div>
         </div>
-      </div>
+      </div> 
       <div class="venue__content-wrapper">
         <h2 class="venue__title page-title">Venue</h2>
-        <p class="venue__description">{{ .description }}</p>
+        <p class="venue__description">{{ .description }}</p> 
 
-        {{ end }}
+        {{ end }} -->
 
         <form class="venue__form validate" action="https://all-systems-go.us14.list-manage.com/subscribe/post?u=1357cb4149750098f861b3a0d&amp;id=727559bb60"
           method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>

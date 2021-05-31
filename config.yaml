@@ -2,7 +2,7 @@ baseurl: '/'
 title: All Systems Go!
 theme: asg
 languageCode: en-us
-copyright: © All rights reserved - All Systems Go! 2019
+copyright: © All rights reserved - All Systems Go! 2021
 pluralizelisttitles: 'false'
 
 author:
@@ -15,11 +15,11 @@ params:
   Email: org-team@all-systems-go.io
   Subtitle: The foundational user-space Linux conference
 
-  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
-  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
-  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
+#  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
+#  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
+#  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
   header:
-    eventDate: Sept. 20-22, 2019
+    eventDate: Spring, 2022
     eventPlace: Berlin
 
   event: 
@@ -126,8 +126,8 @@ params:
       logo: microsoft.svg
   
   lookBack:
-    year: 2018
-    description: All Systems Go! 2018 welcomed more than 200 attendees for 3 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
+    year: 2019
+    description: All Systems Go! 2019 welcomed more than 200 attendees for 3 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
 
   venue:
     description: All Systems Go! takes place in the heart of Berlin at Alte Münze,a short
@@ -139,15 +139,15 @@ params:
 menu:
   main:
     - identifer: tickets
-      name: Tickets
+    #  name: Tickets
       url: "#tickets"
       weight: -120
     - identifer: schedule
-      name: Schedule
+    #  name: Schedule
       url: "#schedule"
       weight: -110
     - identifer: speakers
-      name: Speakers
+    #  name: Speakers
       url: "#speakers"
       weight: -100
     - identifer: conduct
