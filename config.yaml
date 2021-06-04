@@ -19,7 +19,7 @@ params:
 #  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
 #  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
   header:
-    eventDate: Spring, 2022
+    eventDate: Spring 2022
     eventPlace: Berlin
 
   event: 
