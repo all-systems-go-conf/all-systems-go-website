@@ -2,7 +2,7 @@ baseurl: '/'
 title: All Systems Go!
 theme: asg
 languageCode: en-us
-copyright: © All rights reserved - All Systems Go! 2021
+copyright: © All rights reserved - All Systems Go! 2022
 pluralizelisttitles: 'false'
 
 author:
@@ -19,18 +19,16 @@ params:
 #  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
 #  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
   header:
-    eventDate: Coming Back in 2022!  
+    eventDate: We'll be back in October 2023!
     eventPlace: Berlin, Germany
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
         gathering place for both contributors and users of projects that make up the foundation of modern Linux
         systems.
-    update: As the COVID situation continues to change, we're excited to announce that we'll be back in 2022 following a two-year hiatus.
+    update: We're excited to announce that we'll be back in 2023 following a multi-year hiatus due to the global COVID pandemic.
 
-      To keep our community safe during this event, the All Systems Go organising team is committed to implementing all of the necessary safety precautions as recommended by health and government officials. 
-
-      We're excited to see you in 2022! 
+      See you in 2023!
 
   events:
   - date: 19 Thu
@@ -80,6 +78,7 @@ params:
           submissions and project involvement related to the following topics:"
     topics: [
       "Service management",
+      "Image-based Linux OS",
       "Process isolation",
       "Monitoring and tracing",
       "Networking",

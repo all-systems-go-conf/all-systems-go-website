@@ -16,11 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
-
       <!-- Custom CSS -->
       {{ $options := (dict "targetPath" "/css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
       {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options }}
