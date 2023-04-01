@@ -27,9 +27,6 @@ params:
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
         gathering place for both contributors and users of projects that make up the foundation of modern Linux
         systems.
-    update: We're excited to announce that we'll be back in 2023 following a multi-year hiatus due to the global COVID pandemic.
-
-      See you in 2023!
 
   events:
   - date: 19 Thu
