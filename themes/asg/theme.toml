@@ -2,7 +2,7 @@
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
 name = "All Systems Go Theme"
-license = "All rights reserved"
+license = "MIT"
 description = "Theme All Systems Go! Conference"
 homepage = "https://all-systems-go.io"
 tags = ["company", ""]
