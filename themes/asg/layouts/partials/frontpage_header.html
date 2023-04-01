@@ -20,6 +20,8 @@
       <p>{{ .Site.Params.Header.notice }}</p> 
       <p>{{ .Site.Params.Header.eventCity }}</p> 
     </div>
+    {{ if .Site.Params.ticketsLink }}
     <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">Register</a>
+    {{ end }}
   </div>
 </header>
