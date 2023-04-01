@@ -19,8 +19,9 @@ params:
 #  participationLink: 'https://cfp.all-systems-go.io/ASG2019/cfp'
 #  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
   header:
-    eventDate: We'll be back in October 2023!
-    eventPlace: Berlin, Germany
+    notice: We'll be back in Sept./Oct. 2023!
+    eventDate: Sept. 13-14th
+    eventCity: still in Berlin, Germany
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
