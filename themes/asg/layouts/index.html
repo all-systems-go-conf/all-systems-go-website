@@ -13,8 +13,8 @@
       </div>
       <div class="hero__image-wrapper">
         <picture>
-          <source srcset="/images/hero-image-mobile.svg" media="(max-width: 767px)">
-          <img src="/images/hero-image.svg" alt="hero image" draggable="false">
+          <source srcset="{{ $.Site.BaseURL }}images/hero-image-mobile.svg" media="(max-width: 767px)">
+          <img src="{{ $.Site.BaseURL }}images/hero-image.svg" alt="hero image" draggable="false">
         </picture>
         <div class="hero__scroll-icon hero__scroll-icon--mobile">
           <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,9 +63,9 @@
           {{ with .Site.Data.speakers }}
           {{ range .speakers }}
           <div class="speakers__item swiper-slide">
-            <img class="speakers__photo" src="/images/speakers/{{ .image }}" width="260" height="260" alt="speaker photo"
+            <img class="speakers__photo" src="{{ $.Site.BaseURL }}images/speakers/{{ .image }}" width="260" height="260" alt="speaker photo"
               draggable="false">
-            <img class="speakers__background" src="/images/icons/arrows-speakers.svg" alt="">
+            <img class="speakers__background" src="{{ $.Site.BaseURL }}images/icons/arrows-speakers.svg" alt="">
             <p class="speakers__name">{{ .name }}</p>
             <div class="speakers__company">
               <span><a href="{{ .company_link }}">{{ .company }}</a></span>
@@ -117,17 +117,17 @@
           {{ with .Site.GetPage "code-of-conduct" }}
           <p class="conduct__description">{{ .Params.description }}</p>
           {{ end }}
-          <a class="conduct__link" href="/code-of-conduct">Read our code of conduct</a>
+          <a class="conduct__link" href="{{ $.Site.BaseURL }}code-of-conduct">Read our code of conduct</a>
         </div>
         <div class="conduct__photo-wrapper">
-          <img class="conduct__photo" src="/images/code-of-conduct.png" width="360" height="573" alt="man telling about conduct"
+          <img class="conduct__photo" src="{{ $.Site.BaseURL }}images/code-of-conduct.png" width="360" height="573" alt="man telling about conduct"
             draggable="false">
         </div>
       </section>
 
       <section class="participation" id="participation">
         <div class="participation__photo-wrapper">
-          <img class="participation__photo" src="/images/participation-photo.png" width="360" height="573"
+          <img class="participation__photo" src="{{ $.Site.BaseURL }}images/participation-photo.png" width="360" height="573"
             alt="man telling about conduct" draggable="false">
         </div>
         <div class="participation__wrapper">
@@ -160,7 +160,7 @@
               {{ range .sponsors }}
                 <li class="sponsors__item">
                   <a href="{{ .link }}" target="_blank">
-                    <img src="/images/sponsors/{{ .logo }}" alt="{{ .logo }}" class="sponsor__image">
+                    <img src="{{ $.Site.BaseURL }}images/sponsors/{{ .logo }}" alt="{{ .logo }}" class="sponsor__image">
                   </a>
                 </li>
               {{ end }}
@@ -181,7 +181,7 @@
           <p class="look-back__description">{{ .description }}</p>
           <a class="look-back__button btn" href="https://flic.kr/s/aHsmHzDhzF"
             target="_blank">
-            <img src="/images/icons/flickr-icon.svg" alt="flickr icon">
+            <img src="{{ $.Site.BaseURL }}images/icons/flickr-icon.svg" alt="flickr icon">
           </a>
         </div>
         {{ end }}
@@ -206,10 +206,10 @@
     <!--  <div class="venue__map-wrapper">
           {{ with .Site.Params.venue }}
         <div class="venue__map">
-          <img class="venue__map-image" src="/images/{{ .map }}" alt="map" draggable="false">
+          <img class="venue__map-image" src="{{ $.Site.BaseURL }}images/{{ .map }}" alt="map" draggable="false">
         </div>
         <div class="venue__map-wrapper-iner">
-          <img src="/images/icons/{{ .logo }}" alt="logo" draggable="false">
+          <img src="{{ $.Site.BaseURL }}images/icons/{{ .logo }}" alt="logo" draggable="false">
           <div class="venue__block">
             <h4>Zentrale Lage</h4>
             <p>{{ .place }}</p>

@@ -10,9 +10,9 @@
 
     <title>{{ .Title }} | {{ .Site.Params.Subtitle }}</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon/favicon64.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="/images/favicon/favicon128.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon/favicon32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ .Site.BaseURL }}images/favicon/favicon64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="{{ .Site.BaseURL }}images/favicon/favicon128.png">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
@@ -28,37 +28,13 @@
       <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     {{- end -}}
-    <link rel="canonical" href="{{ .Site.BaseURL }}" />
+    <link rel="canonical" href="{{ $.Site.BaseURL }}" />
     {{- hugo.Generator -}}
 
-    {{- $postImage := .Params.postimage -}}
     {{- $ogImageWidth := 1200 -}}
     {{- $ogImageHeight := 600 -}}
 
-    {{- if $postImage -}}
-      {{- $path := print "**/" .Params.postImage -}}
-      {{- $image := resources.GetMatch $path -}}
-      {{- if $image -}}
-          {{- $imagePath := path.Join "/media/" .Params.postImage -}}
-          {{- if in (slice "image/jpeg" "image/jpg" "image/png") (string $image.MediaType) -}}
-              {{- $imagePath = ($image.Resize "920x png q100").RelPermalink -}}
-          {{- end -}}
-          {{- $baseURL := $.Site.BaseURL -}}
-          {{/* Trim last / */}}
-          {{- if eq (substr $baseURL -1 1) "/" -}}
-              {{- $baseURL = substr $baseURL 0 -1  -}}
-          {{- end -}}
-          {{- if eq $baseURL "" -}}
-              {{- $baseURL = "https://www.inspektor-gadget.io"  -}}
-          {{- end -}}
-
-          {{- $postImage = printf "%s%s" $baseURL $imagePath -}}
-          {{- $ogImageWidth = 0 -}}
-          {{- $ogImageHeight = 0 -}}
-      {{- end -}}
-    {{- end -}}
-
-    {{- $ogImage := default (path.Join "/media/" .Site.Params.socialImage) $postImage -}}
+    {{- $ogImage := (path.Join "media/" .Site.Params.socialImage) -}}
 
     {{- $title := .Title -}}
 
@@ -77,7 +53,7 @@
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="article:modified_time" content="{{ hugo.BuildDate }}" />
-    <meta property="og:image" content="{{ $ogImage }}" />
+    <meta property="og:image" content="{{ $.Site.BaseURL }}{{ $ogImage }}" />
     {{- if gt $ogImageWidth 0 -}}
     <meta property="og:image:width" content="{{ $ogImageWidth }}" />
     <meta property="og:image:height" content="{{ $ogImageHeight }}" />
@@ -85,7 +61,7 @@
 
     <!-- Twitter meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="{{ $ogImage }}" />
+    <meta name="twitter:image" content="{{ $.Site.BaseURL }}{{ $ogImage }}" />
     <meta name="twitter:creator" content="@ASGConf" />
     <meta name="twitter:site" content="@ASGConf" />
 
