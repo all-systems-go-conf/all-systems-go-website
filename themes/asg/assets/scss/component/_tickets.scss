@@ -36,7 +36,7 @@
     left: 0;
     top: calc(50% - 10px);
 
-    background-image: url("../../images/icons/tickets-icon.svg");
+    background-image: url("../images/icons/tickets-icon.svg");
     background-repeat: no-repeat;
   }
 }
@@ -118,15 +118,15 @@
 }
 
 .tickets__item--student{
-  background-image: url("../../images/tickets-bg.svg");
+  background-image: url("../images/tickets-bg.svg");
 }
 
 .tickets__item--individual{
-  background-image: url("../../images/individual-bg.svg");
+  background-image: url("../images/individual-bg.svg");
 }
 
 .tickets__item--corporate{
-  background-image: url("../../images/corporate-bg.svg");
+  background-image: url("../images/corporate-bg.svg");
 }
 
 .tickets__item div {

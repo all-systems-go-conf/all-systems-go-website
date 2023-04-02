@@ -20,7 +20,7 @@
     top: -140px;
     left: calc(50% - 125px);
 
-    background-image: url("../../images/red-arrow.svg");
+    background-image: url("../images/red-arrow.svg");
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -75,7 +75,7 @@
   text-transform: uppercase;
   font-weight: $fontBold;
   letter-spacing: 2px;
-  background-image: url("../../images/btn-bg-left.svg"), url("../../images/btn-bg-right.svg") ;
+  background-image: url("../images/btn-bg-left.svg"), url("../images/btn-bg-right.svg") ;
   background-position: left center, right center;
   background-repeat: no-repeat;
   background-size:contain;

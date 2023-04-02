@@ -20,7 +20,7 @@
     height: 50px;
     top: -23px;
     left: 100%;
-    background-image: url("../../images/icons/arrow-blue.svg");
+    background-image: url("../images/icons/arrow-blue.svg");
     background-repeat: no-repeat;
   }
 }
@@ -54,7 +54,7 @@
     height: 12px;
     top: calc(50% - 6px);
     left: 0;
-    background-image: url("../../images/icons/list-icon.png");
+    background-image: url("../images/icons/list-icon.png");
     background-repeat: no-repeat;
   }
 }
@@ -71,7 +71,7 @@
   text-transform: uppercase;
   font-weight: $fontBold;
   letter-spacing: 2px;
-  background-image: url("../../images/btn-bg-left.svg"), url("../../images/btn-bg-right.svg") ;
+  background-image: url("../images/btn-bg-left.svg"), url("../images/btn-bg-right.svg") ;
   background-position: left center, right center;
   background-repeat: no-repeat;
   background-size:contain;

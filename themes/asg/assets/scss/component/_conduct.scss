@@ -22,7 +22,7 @@
     height: 50px;
     top: -23px;
     left: 100%;
-    background-image: url("../../images/icons/arrow-red.svg");
+    background-image: url("../images/icons/arrow-red.svg");
     background-repeat: no-repeat;
     transform: rotate(-90deg) scale(0.8);
   }
@@ -47,7 +47,7 @@
   text-transform: uppercase;
   font-weight: $fontBold;
   letter-spacing: 2px;
-  background-image: url("../../images/btn-bg-left.svg"), url("../../images/btn-bg-right.svg") ;
+  background-image: url("../images/btn-bg-left.svg"), url("../images/btn-bg-right.svg") ;
   background-position: left center, right center;
   background-repeat: no-repeat;
   background-size:contain;
