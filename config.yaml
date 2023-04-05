@@ -24,7 +24,7 @@ params:
   header:
     notice: CFP is now open!
     eventDate: Sept. 13-14th
-    eventCity: 'Date: Sept. (TBA) - Place: Berlin, DE'
+    eventCity: 'Date: Sept. 13-14th - Place: Berlin, DE'
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
