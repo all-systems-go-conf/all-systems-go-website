@@ -16,9 +16,9 @@ params:
   
   socialImage: all-systems-go-social-card.png
 
-#  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2019
+#  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2023
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2023/cfp'
-#  sponsorshipLink: https://github.com/all-systems-go-conf/conference/raw/master/Documents/Sponsorship/Sponsorship%20Prospectus:%20All%20Systems%20Go!.pdf 
+  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202023%20Sponsorship%20Prospectus.pdf
   sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
