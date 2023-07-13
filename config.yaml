@@ -101,34 +101,14 @@ params:
   sponsors:
   - type: Solar
     sponsors:
-    - name: Aiven
-      link: https://www.aiven.io/
-      logo: aiven.svg
-    - name: Kinvolk
-      link: https://kinvolk.io
-      logo: kinvolk.svg
-    - name: Facebook
-      link: https://code.fb.com/
-      logo: facebook.svg
-    - name: Packet
-      link: https://packet.com/
-      logo: packet.png
+    - name: Meta
+      link: https://www.meta.com
+      logo: meta.svg
   - type: Lunar
     sponsors:
     - name: Pantheon
       link: https://www.pantheon.io/
       logo: pantheon.svg
-    - name: Red Hat
-      link: https://www.redhat.com/
-      logo: redhat.svg
-  - type: Terrestrial
-    sponsors:
-    - name: Grafana
-      link: https://www.grafana.com/
-      logo: grafana-labs.svg
-    - name: Microsoft
-      link: https://www.microsoft.com/
-      logo: microsoft.svg
   
   lookBack:
     year: 2019
