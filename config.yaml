@@ -16,7 +16,7 @@ params:
   
   socialImage: all-systems-go-social-card.png
 
-#  ticketsLink: https://ti.to/all-systems-go/all-systems-go-2023
+  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2023'
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2023/cfp'
   sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202023%20Sponsorship%20Prospectus.pdf
   sponsorshipEmail: sponsorship@all-systems-go.io
@@ -59,19 +59,19 @@ params:
   tickets:
     - type: student
       price:
-        early: €35
-        standard: €45
-        late: €55
+        early: €40
+        standard: €50
+        late: €60
     - type: individual
       price:
-        early: €200
-        standard: €230
-        late: €250
+        early: €220
+        standard: €250
+        late: €290
     - type: corporate
       price:
-        early: €390
-        standard: €440
-        late: €490
+        early: €410
+        standard: €450
+        late: €500
 
   participation:
     description:  "All Systems Go! wants to encourage and attract as broad an interest as
