@@ -204,15 +204,15 @@
     </section>
 
     <section class="venue">
-    <!--  <div class="venue__map-wrapper">
+        <div class="venue__map-wrapper">
           {{ with .Site.Params.venue }}
         <div class="venue__map">
           <img class="venue__map-image" src="{{ $.Site.BaseURL }}images/{{ .map }}" alt="map" draggable="false">
         </div>
         <div class="venue__map-wrapper-iner">
-          <img src="{{ $.Site.BaseURL }}images/icons/{{ .logo }}" alt="logo" draggable="false">
+          <!-- <img src="{{ $.Site.BaseURL }}images/icons/{{ .logo }}" alt="logo" draggable="false"> -->
           <div class="venue__block">
-            <h4>Zentrale Lage</h4>
+            <h4>{{ .name }}e</h4>
             <p>{{ .place }}</p>
           </div>
         </div>
@@ -221,7 +221,7 @@
         <h2 class="venue__title page-title">Venue</h2>
         <p class="venue__description">{{ .description }}</p> 
 
-        {{ end }} -->
+        {{ end }}
 
       </div>
     </section>
