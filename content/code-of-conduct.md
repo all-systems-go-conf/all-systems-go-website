@@ -146,4 +146,4 @@ If at all possible, all reports should be made directly to one of the following 
 
 This Code of Conduct is licensed under the [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/).
 
-It was derived from the [ChefConf Code of Conduct](https://blog.chef.io/chefconfcodeofconduct/) which was forked from the [Geek Feminism wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy), created by the [Ada Initiative](https://adainitiative.org/) and other volunteers. It is also based on the [PyCon Code of Conduct](https://github.com/python/pycon-code-of-conduct).g
+It was derived from the [ChefConf Code of Conduct](https://blog.chef.io/chefconfcodeofconduct/) which was forked from the [Geek Feminism wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy), created by the [Ada Initiative](https://adainitiative.org/) and other volunteers. It is also based on the [PyCon Code of Conduct](https://github.com/python/pycon-code-of-conduct).
