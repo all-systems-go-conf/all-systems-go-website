@@ -22,7 +22,7 @@ params:
   sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
-    notice: [Live streaming](https://streaming.media.ccc.de/asg2023)
+    notice: Live streaming https://streaming.media.ccc.de/asg2023
     eventDate: Sept. 13-14th
     eventCity: 'Date: Sept. 13-14th - Place: Berlin, DE'
 
