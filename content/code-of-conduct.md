@@ -137,10 +137,10 @@ Depending on the incident, the conference chair, or designate, may decide to mak
 
 If some attendees were angered by the incident, it is best to apologize to them that the incident occurred to begin with. If there are residual hard feelings, suggest to them to write an email to the conference chair or to the event coordinator. It will be dealt with accordingly.
 
-If at all possible, all reports should be made directly to one of the following contacts.
+If at all possible, all reports should be made directly to one of the following contacts, via SMS or the Signal app.
 
-* TBD
-* TBD
+* Chris Kühl: +49 175 5589364
+* David Strauss: +1 512 577 5827
 
 ## License
 
