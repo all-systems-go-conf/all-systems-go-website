@@ -36,10 +36,10 @@
 
     </section>
 
-  <section class="schedule" id="schedule">
+  <!-- <section class="schedule" id="schedule">
       <h2 class="schedule__title page-title">2023 Conference Schedule</h2>
       <a class="schedule__link" href="https://cfp.all-systems-go.io/all-systems-go-2023/schedule/">View the full schedule!</a>
-      <!--{{ range .Site.Params.events }}
+      {{ range .Site.Params.events }}
       <div class="schedule__event-block">
         <p class="schedule__event-day">{{.date}}</p>
         {{ range .event }}
@@ -49,8 +49,8 @@
           </div>
         {{ end }}
       </div>
-    {{ end }}-->
-    </section>
+    {{ end }}
+    </section> -->
 
   <!--  <section class="speakers" id="speakers">
       {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }} 
@@ -81,7 +81,7 @@
       </div>
     </section> 
 -->
-    <section class="tickets" id="tickets">
+    <!-- <section class="tickets" id="tickets">
       <h2 class="tickets__title page-title">tickets</h2>
       <div class="tickets__text"><span>Tickets are </span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">SOLD OUT!</a></div>
 
@@ -106,7 +106,7 @@
           </div>
         {{ end }}
       </div>
-    </section>
+    </section> -->
 
     <div class="container">
       <section class="conduct" id="conduct">
@@ -138,14 +138,14 @@
             {{ end }}
           </ul>
           {{ end }}
-          <p class="participation__description">CFP closes July 7th</p>
-          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">CFP is closed</a>
+          <p class="participation__description">CFP closes June 14th</p>
+          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">Submit your proposal now!</a>
         </div>
       </section>
     </div>
 
     <section class="sponsors" id="sponsor">
-      <h2 class="sponsors__title page-title">Sponsors</h2>
+      <h2 class="sponsors__title page-title">Past Sponsors</h2>
       {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }} 
       <p class="sponsors__description">All Systems Go! is only possibly with the generous support from our sponsors.
         {{ if not .Site.Params.sponsorshipLink }}
@@ -187,17 +187,18 @@
        <!-- <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
         title="All Systems Go! 2018"><img src="https://farm5.staticflickr.com/4872/46026369395_8813369b89_z.jpg"
           width="640" height="360" alt="All Systems Go! 2018"></a> -->
-          <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157711260797017" title="All Systems Go! 2019"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2019"></a>
+          <!-- <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157711260797017" title="All Systems Go! 2019"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2019"></a> -->
+          <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72177720311454927" title="All Systems Go! 2023"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2023"></a>
       </div>
     </section>
 
     <section class="video-content">
-      <h2 class="video-content__title page-title">Talks from 2019</h2>
+      <h2 class="video-content__title page-title">Talks from 2023</h2>
       <div class="video-content__wrapper">
        <!-- <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EipxBYJxx6-Q8ED5EXlQ4Nyp"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
         </iframe> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/D_MAM3wcjVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/playlist?list=PLWYdJViL9EioDNHn7xIqQJLyCayNPKeYf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
 
