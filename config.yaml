@@ -1,7 +1,7 @@
 title: All Systems Go!
 theme: asg
 languageCode: en-us
-copyright: © All rights reserved - All Systems Go! 2023
+copyright: © All rights reserved - All Systems Go! 2024
 pluralizelisttitles: 'false'
 
 author:
@@ -16,15 +16,15 @@ params:
   
   socialImage: all-systems-go-social-card.png
 
-  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2023'
-  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2023/cfp'
-  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202023%20Sponsorship%20Prospectus.pdf
+#  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2024'
+  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2024/cfp'
+#  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202023%20Sponsorship%20Prospectus.pdf
   sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
-    notice: That's a wrap!
-    eventDate: Sept. 13-14th
-    eventCity: 'Date: Sept. 13-14th - Place: Berlin, DE'
+    notice: CFP is now open!
+    eventDate: Sept. 25-26th
+    eventCity: 'Date: Sept. 25-26th - Place: Berlin, DE'
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
@@ -88,6 +88,8 @@ params:
     ]
 
   social:
+#    - title: mastodon
+#      url: 'https://fosstodon.org/@allsystemsgo'
     - title: twitter
       url: 'https://twitter.com/asgconf'
       image: 'twitter-icon'
@@ -114,8 +116,8 @@ params:
       logo: ebee-logo.png
   
   lookBack:
-    year: 2019
-    description: All Systems Go! 2019 welcomed more than 200 attendees for 3 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
+    year: 2023
+    description: All Systems Go! 2023 welcomed more than 150 attendees for 2 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
 
   venue:
     description: All Systems Go! takes place in the heart of Berlin at Neue Mälzerei, a short trip from Alexanderplatz and
