@@ -88,8 +88,9 @@ params:
     ]
 
   social:
-#    - title: mastodon
-#      url: 'https://fosstodon.org/@allsystemsgo'
+    - title: mastodon
+      url: 'https://fosstodon.org/@allsystemsgo'
+      image: 'mastodon-icon'
     - title: twitter
       url: 'https://twitter.com/asgconf'
       image: 'twitter-icon'
