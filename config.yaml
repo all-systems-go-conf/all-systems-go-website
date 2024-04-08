@@ -18,7 +18,7 @@ params:
 
 #  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2024'
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2024/cfp'
-#  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202023%20Sponsorship%20Prospectus.pdf
+  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202024%20Sponsorship%20Prospectus.pdf
   sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
