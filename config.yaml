@@ -107,14 +107,6 @@ params:
     - name: Meta
       link: https://www.meta.com
       logo: meta.svg
-  - type: Lunar
-    sponsors:
-    - name: Pantheon
-      link: https://www.pantheon.io/
-      logo: pantheon.svg
-    - name: ebee
-      link: https://www.ebee.de
-      logo: ebee-logo.png
   
   lookBack:
     year: 2023
