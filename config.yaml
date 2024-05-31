@@ -110,7 +110,7 @@ params:
     - name: Meta
       link: https://www.meta.com
       logo: meta.svg
-  - type: Terrrestrial
+  - type: Terrestrial
     sponsors:
     - name: Microsoft
       link: https://www.microsoft.com
