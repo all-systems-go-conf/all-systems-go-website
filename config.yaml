@@ -104,10 +104,18 @@ params:
   sponsors:
   - type: Solar
     sponsors:
+    - name: Chorus One
+      link: https://chorus.one/
+      logo: chorusone_logo.svg
     - name: Meta
       link: https://www.meta.com
       logo: meta.svg
-  
+  - type: Terrrestrial
+    sponsors:
+    - name: Microsoft
+      link: https://www.microsoft.com
+      logo: microsoft.svg
+
   lookBack:
     year: 2023
     description: All Systems Go! 2023 welcomed more than 150 attendees for 2 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
