@@ -110,6 +110,11 @@ params:
     - name: Meta
       link: https://www.meta.com
       logo: meta.svg
+  - type: Lunar
+    sponsors:
+    - name: Pantheon
+      link: https://www.pantheon.io
+      logo: pantheon.svg
   - type: Terrestrial
     sponsors:
     - name: Microsoft
