@@ -7,9 +7,9 @@
 <main>
   <section class="hero">
       <div class="hero__social">
-      
+
         {{ partial "socials.html" . }}
-        
+
       </div>
       <div class="hero__image-wrapper">
         <picture>
@@ -20,14 +20,14 @@
           <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3"/>
             <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white"/>
-            </svg>          
+            </svg>
         </div>
       </div>
       <div class="hero__scroll-icon">
         <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3"/>
           <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white"/>
-          </svg>          
+          </svg>
       </div>
     </section>
 
@@ -53,11 +53,11 @@
     </section>
 
   <!--  <section class="speakers" id="speakers">
-      {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }} 
-      <h2 class="speakers__title page-title">Featured speakers</h2>        
+      {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }}
+      <h2 class="speakers__title page-title">Featured speakers</h2>
       <div class="speakers__swiper-container">
         <div class="speakers__list swiper-wrapper">
-          
+
           {{ with .Site.Data.speakers }}
           {{ range .speakers }}
           <div class="speakers__item swiper-slide">
@@ -79,7 +79,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section> 
+    </section>
 -->
     <section class="tickets" id="tickets">
       <h2 class="tickets__title page-title">tickets</h2>
@@ -148,7 +148,7 @@
 
     <section class="sponsors" id="sponsor">
       <h2 class="sponsors__title page-title">Sponsors</h2>
-      {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }} 
+      {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }}
       <p class="sponsors__description">All Systems Go! is only possibly with the generous support from our sponsors.
         {{ if not .Site.Params.sponsorshipLink }}
         <a class="sponsors__link" href="mailto:{{ .Site.Params.sponsorshipEmail }}"> Reach out to become a sponsor!</a>
@@ -217,10 +217,10 @@
             <p><a href="{{ .link }}">{{ .place }}</a></p>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="venue__content-wrapper">
         <h2 class="venue__title page-title">Venue</h2>
-        <p class="venue__description">{{ .description }}</p> 
+        <p class="venue__description">{{ .description }}</p>
 
         {{ end }}
 
