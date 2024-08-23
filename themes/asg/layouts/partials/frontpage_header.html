@@ -2,7 +2,8 @@
   <div class="header__container">
     <div class="header__wrapper">
       <a class="header__logo" href="{{ .Site.BaseURL }}">
-        <img src="{{ .Site.BaseURL }}images/logo/logo.svg" width="200" height="47" alt="All systems go logotype" draggable="false">
+        <img src="{{ .Site.BaseURL }}images/logo/logo.svg" width="200" height="47" alt="All systems go logotype"
+          draggable="false">
       </a>
       <div class="header__hamburger">
         <span></span>
@@ -17,11 +18,11 @@
       </ul>
     </nav>
     <div class="header__date">
-      <p>{{ .Site.Params.Header.notice }}</p> 
-      <p>{{ .Site.Params.Header.eventCity }}</p> 
+      <p>{{ .Site.Params.Header.notice }}</p>
+      <p>{{ .Site.Params.Header.eventCity }}</p>
     </div>
     {{ if .Site.Params.ticketsLink }}
-    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">Register</a>
+    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">SOLD OUT!</a>
     {{ end }}
   </div>
 </header>

@@ -6,40 +6,41 @@
 
 <main>
   <section class="hero">
-      <div class="hero__social">
+    <div class="hero__social">
 
-        {{ partial "socials.html" . }}
+      {{ partial "socials.html" . }}
 
-      </div>
-      <div class="hero__image-wrapper">
-        <picture>
-          <source srcset="{{ $.Site.BaseURL }}images/hero-image-mobile.svg" media="(max-width: 767px)">
-          <img src="{{ $.Site.BaseURL }}images/hero-image.svg" alt="hero image" draggable="false">
-        </picture>
-        <div class="hero__scroll-icon hero__scroll-icon--mobile">
-          <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3"/>
-            <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white"/>
-            </svg>
-        </div>
-      </div>
-      <div class="hero__scroll-icon">
+    </div>
+    <div class="hero__image-wrapper">
+      <picture>
+        <source srcset="{{ $.Site.BaseURL }}images/hero-image-mobile.svg" media="(max-width: 767px)">
+        <img src="{{ $.Site.BaseURL }}images/hero-image.svg" alt="hero image" draggable="false">
+      </picture>
+      <div class="hero__scroll-icon hero__scroll-icon--mobile">
         <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3"/>
-          <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white"/>
-          </svg>
+          <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3" />
+          <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white" />
+        </svg>
       </div>
-    </section>
+    </div>
+    <div class="hero__scroll-icon">
+      <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1.5" y="1.5" width="17" height="27" rx="8.5" stroke="white" stroke-width="3" />
+        <rect class="mouse-animation" x="8" y="7" width="4" height="7" rx="2" fill="white" />
+      </svg>
+    </div>
+  </section>
 
-    <section class="about">
-      <p class="about__description">{{ .Site.Params.Event.description }}</p>
+  <section class="about">
+    <p class="about__description">{{ .Site.Params.Event.description }}</p>
 
-    </section>
+  </section>
 
   <section class="schedule" id="schedule">
-      <h2 class="schedule__title page-title">2024 Conference Schedule</h2>
-      <a class="schedule__link" href="https://cfp.all-systems-go.io/all-systems-go-2024/schedule/">View the full schedule!</a>
-      <!--{{ range .Site.Params.events }}
+    <h2 class="schedule__title page-title">2024 Conference Schedule</h2>
+    <a class="schedule__link" href="https://cfp.all-systems-go.io/all-systems-go-2024/schedule/">View the full
+      schedule!</a>
+    <!--{{ range .Site.Params.events }}
       <div class="schedule__event-block">
         <p class="schedule__event-day">{{.date}}</p>
         {{ range .event }}
@@ -50,7 +51,7 @@
         {{ end }}
       </div>
     {{ end }}-->
-    </section>
+  </section>
 
   <!--  <section class="speakers" id="speakers">
       {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }}
@@ -81,49 +82,50 @@
       </div>
     </section>
 -->
-    <section class="tickets" id="tickets">
-      <h2 class="tickets__title page-title">tickets</h2>
-      <div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>
+  <section class="tickets" id="tickets">
+    <h2 class="tickets__title page-title">tickets</h2>
+    <!--<div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>-->
+    <div class="tickets__text"><span>Tickets are now SOLD OUT!</span> </div>
 
-      <div class="tickets__wrapper">
-        {{ range .Site.Params.tickets }}
-          <div class="tickets__block">
-            <h3 class="tickets__sub-title">{{ .type }}:</h3>
-            <ul class="tickets__list">
-              <li class="tickets__item tickets__item--{{ .type }}">
-                <div>Early</div>
-                <div class="tickets__price">{{ .price.early }}</div>
-              </li>
-              <li class="tickets__item tickets__item--{{ .type }}">
-                <div>standard</div>
-                <div class="tickets__price">{{ .price.standard }}</div>
-              </li>
-              <li class="tickets__item tickets__item--{{ .type }}">
-                <div>Late</div>
-                <div class="tickets__price">{{ .price.late }}</div>
-              </li>
-            </ul>
-          </div>
+    <div class="tickets__wrapper">
+      {{ range .Site.Params.tickets }}
+      <div class="tickets__block">
+        <h3 class="tickets__sub-title">{{ .type }}:</h3>
+        <ul class="tickets__list">
+          <li class="tickets__item tickets__item--{{ .type }}">
+            <div>Early</div>
+            <div class="tickets__price">{{ .price.early }}</div>
+          </li>
+          <li class="tickets__item tickets__item--{{ .type }}">
+            <div>standard</div>
+            <div class="tickets__price">{{ .price.standard }}</div>
+          </li>
+          <li class="tickets__item tickets__item--{{ .type }}">
+            <div>Late</div>
+            <div class="tickets__price">{{ .price.late }}</div>
+          </li>
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="conduct" id="conduct">
+      <div class="conduct__wrapper">
+        <h2 class="conduct__title page-title">Code of Conduct</h2>
+        {{ with .Site.GetPage "code-of-conduct" }}
+        <p class="conduct__description">{{ .Params.description }}</p>
         {{ end }}
+        <a class="conduct__link" href="{{ $.Site.BaseURL }}code-of-conduct">Read our code of conduct</a>
+      </div>
+      <div class="conduct__photo-wrapper">
+        <img class="conduct__photo" src="{{ $.Site.BaseURL }}images/code-of-conduct.png" width="360" height="573"
+          alt="man telling about conduct" draggable="false">
       </div>
     </section>
 
-    <div class="container">
-      <section class="conduct" id="conduct">
-        <div class="conduct__wrapper">
-          <h2 class="conduct__title page-title">Code of Conduct</h2>
-          {{ with .Site.GetPage "code-of-conduct" }}
-          <p class="conduct__description">{{ .Params.description }}</p>
-          {{ end }}
-          <a class="conduct__link" href="{{ $.Site.BaseURL }}code-of-conduct">Read our code of conduct</a>
-        </div>
-        <div class="conduct__photo-wrapper">
-          <img class="conduct__photo" src="{{ $.Site.BaseURL }}images/code-of-conduct.png" width="360" height="573" alt="man telling about conduct"
-            draggable="false">
-        </div>
-      </section>
-
-<!--
+    <!--
       <section class="participation" id="participation">
         <div class="participation__photo-wrapper">
           <img class="participation__photo" src="{{ $.Site.BaseURL }}images/participation-photo.png" width="360" height="573"
@@ -144,88 +146,93 @@
         </div>
       </section>
 -->
-    </div>
+  </div>
 
-    <section class="sponsors" id="sponsor">
-      <h2 class="sponsors__title page-title">Sponsors</h2>
-      {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }}
-      <p class="sponsors__description">All Systems Go! is only possibly with the generous support from our sponsors.
-        {{ if not .Site.Params.sponsorshipLink }}
-        <a class="sponsors__link" href="mailto:{{ .Site.Params.sponsorshipEmail }}"> Reach out to become a sponsor!</a>
-        {{ end }}
-      </p>
-      {{ range .Site.Params.sponsors }}
-          <div class="sponsors__block">
-            <h3>{{ .type }}:</h3>
-            <ul class="sponsors__list">
-              {{ range .sponsors }}
-                <li class="sponsors__item">
-                  <a href="{{ .link }}" target="_blank">
-                    <img src="{{ $.Site.BaseURL }}images/sponsors/{{ .logo }}" alt="{{ .logo }}" class="sponsor__image">
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
+  <section class="sponsors" id="sponsor">
+    <h2 class="sponsors__title page-title">Sponsors</h2>
+    {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }}
+    <p class="sponsors__description">All Systems Go! is only possibly with the generous support from our sponsors.
+      {{ if not .Site.Params.sponsorshipLink }}
+      <a class="sponsors__link" href="mailto:{{ .Site.Params.sponsorshipEmail }}"> Reach out to become a sponsor!</a>
       {{ end }}
-      {{ if .Site.Params.sponsorshipLink }}
-      <a class="sponsors__link" href="{{ .Site.Params.sponsorshipLink }}"> Become a sponsor!</a>
-      {{ end }}
-    </section>
-
-    <section class="look-back">
-      <div class="look-back__container">
-        {{ with .Site.Params.lookBack }}
-        <h2 class="look-back__title page-title">A look back at {{ .year }}</h2>
-        <div class="look-back__wrapper">
-          <p class="look-back__description">{{ .description }}</p>
-          <a class="look-back__button btn" href="https://flic.kr/s/aHsmHzDhzF"
-            target="_blank">
-            <img src="{{ $.Site.BaseURL }}images/icons/flickr-icon.svg" alt="flickr icon">
+    </p>
+    {{ range .Site.Params.sponsors }}
+    <div class="sponsors__block">
+      <h3>{{ .type }}:</h3>
+      <ul class="sponsors__list">
+        {{ range .sponsors }}
+        <li class="sponsors__item">
+          <a href="{{ .link }}" target="_blank">
+            <img src="{{ $.Site.BaseURL }}images/sponsors/{{ .logo }}" alt="{{ .logo }}" class="sponsor__image">
           </a>
-        </div>
+        </li>
         {{ end }}
-       <!-- <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
+      </ul>
+    </div>
+    {{ end }}
+    {{ end }}
+    {{ if .Site.Params.sponsorshipLink }}
+    <a class="sponsors__link" href="{{ .Site.Params.sponsorshipLink }}"> Become a sponsor!</a>
+    {{ end }}
+  </section>
+
+  <section class="look-back">
+    <div class="look-back__container">
+      {{ with .Site.Params.lookBack }}
+      <h2 class="look-back__title page-title">A look back at {{ .year }}</h2>
+      <div class="look-back__wrapper">
+        <p class="look-back__description">{{ .description }}</p>
+        <a class="look-back__button btn" href="https://flic.kr/s/aHsmHzDhzF" target="_blank">
+          <img src="{{ $.Site.BaseURL }}images/icons/flickr-icon.svg" alt="flickr icon">
+        </a>
+      </div>
+      {{ end }}
+      <!-- <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157706243921245"
         title="All Systems Go! 2018"><img src="https://farm5.staticflickr.com/4872/46026369395_8813369b89_z.jpg"
           width="640" height="360" alt="All Systems Go! 2018"></a> -->
-          <!-- <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157711260797017" title="All Systems Go! 2019"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2019"></a> -->
-          <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72177720311454927" title="All Systems Go! 2023"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2023"></a>
-      </div>
-    </section>
+      <!-- <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72157711260797017" title="All Systems Go! 2019"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg" width="640" height="360" alt="All Systems Go! 2019"></a> -->
+      <a data-flickr-embed="true" href="https://www.flickr.com/photos/139110107@N04/albums/72177720311454927"
+        title="All Systems Go! 2023"><img src="https://live.staticflickr.com/65535/48870146656_05b406ddca_z.jpg"
+          width="640" height="360" alt="All Systems Go! 2023"></a>
+    </div>
+  </section>
 
-    <section class="video-content">
-      <h2 class="video-content__title page-title">Talks from 2023</h2>
-      <div class="video-content__wrapper">
-       <!-- <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EipxBYJxx6-Q8ED5EXlQ4Nyp"
+  <section class="video-content">
+    <h2 class="video-content__title page-title">Talks from 2023</h2>
+    <div class="video-content__wrapper">
+      <!-- <iframe width="1024" height="768" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EipxBYJxx6-Q8ED5EXlQ4Nyp"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
         </iframe> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EioDNHn7xIqQJLyCayNPKeYf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLWYdJViL9EioDNHn7xIqQJLyCayNPKeYf"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <section class="venue">
-        <div class="venue__map-wrapper">
-          {{ with .Site.Params.venue }}
-        <div class="venue__map">
-          <img class="venue__map-image" src="{{ $.Site.BaseURL }}images/{{ .map }}" alt="map" draggable="false">
+  <section class="venue">
+    <div class="venue__map-wrapper">
+      {{ with .Site.Params.venue }}
+      <div class="venue__map">
+        <img class="venue__map-image" src="{{ $.Site.BaseURL }}images/{{ .map }}" alt="map" draggable="false">
+      </div>
+      <div class="venue__map-wrapper-iner">
+        <!-- <img src="{{ $.Site.BaseURL }}images/icons/{{ .logo }}" alt="logo" draggable="false"> -->
+        <div class="venue__block">
+          <h4>{{ .name }}e</h4>
+          <p><a href="{{ .link }}">{{ .place }}</a></p>
         </div>
-        <div class="venue__map-wrapper-iner">
-          <!-- <img src="{{ $.Site.BaseURL }}images/icons/{{ .logo }}" alt="logo" draggable="false"> -->
-          <div class="venue__block">
-            <h4>{{ .name }}e</h4>
-            <p><a href="{{ .link }}">{{ .place }}</a></p>
-          </div>
-        </div>
       </div>
-      <div class="venue__content-wrapper">
-        <h2 class="venue__title page-title">Venue</h2>
-        <p class="venue__description">{{ .description }}</p>
+    </div>
+    <div class="venue__content-wrapper">
+      <h2 class="venue__title page-title">Venue</h2>
+      <p class="venue__description">{{ .description }}</p>
 
-        {{ end }}
+      {{ end }}
 
-      </div>
-    </section>
+    </div>
+  </section>
 </main>
 
 {{ partial "footer.html" . }}
