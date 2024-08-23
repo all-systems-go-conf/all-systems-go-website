@@ -120,6 +120,9 @@ params:
     - name: Microsoft
       link: https://www.microsoft.com
       logo: microsoft.svg
+    - name: SAP
+      link: https://www.sap.com
+      logo: sap-logo.svg
 
   lookBack:
     year: 2023
