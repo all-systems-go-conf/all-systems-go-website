@@ -121,7 +121,7 @@ params:
       link: https://www.microsoft.com
       logo: microsoft.svg
     - name: SAP
-      link: https://www.sap.com
+      link: https://jobs.sap.com/search/?title=Garden&location=DE
       logo: sap-logo.svg
 
   lookBack:
