@@ -1,7 +1,7 @@
 title: All Systems Go!
 theme: asg
 languageCode: en-us
-copyright: © All rights reserved - All Systems Go! 2024
+copyright: © All rights reserved - All Systems Go! 2025
 pluralizelisttitles: 'false'
 
 author:
@@ -16,15 +16,15 @@ params:
   
   socialImage: all-systems-go-social-card.png
 
-  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2024'
-  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2024/cfp'
-  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202024%20Sponsorship%20Prospectus.pdf
+#  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
+#  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
+#  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202024%20Sponsorship%20Prospectus.pdf
   sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
-    notice: Recordings https://www.youtube.com/playlist?list=PLWYdJViL9EipIImmvuoGFAeS-lKeHH2DD
-    eventDate: Sept. 25-26th 2024
-    eventCity: 'Date: Sept. 25-26th 2024 - Place: Berlin, DE'
+    notice: Date and venue announced!
+    eventDate: Sept. 30th-Oct. 1st 2025
+    eventCity: 'Date: Sept. 30th-Oct. 1st 2025 - Place: Berlin, DE'
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
@@ -129,12 +129,11 @@ params:
     description: All Systems Go! 2024 welcomed more than 150 attendees for 2 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
 
   venue:
-    description: All Systems Go! takes place in the heart of Berlin at Neue Mälzerei, a short tram trip from Alexanderplatz and
-          walk from Volkspark Friedrichshain.
-    name: Neue Mälzerei
-    place: Friedenstraße 91, 10249 Berlin
-    link: https://maps.app.goo.gl/eWwWSBq5gRtMeuD19
-    map: venue_map.png
+    description: All Systems Go! takes place in the heart of Berlin at Alte Münze, a short walk from Jannowitzbrücke train station and Rotes Rathaus U-Bahn station.
+    name: Alte Münze
+    place: Molkenmarkt 2, 10179 Berlin, Germany
+    link: https://maps.app.goo.gl/QHN3G7yfJ4BntZn77
+    map: map.png
     logo: alte-munze-logo.svg
 
 menu:
