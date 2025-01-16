@@ -111,20 +111,20 @@ canvas {
   bottom: 30px;
 }
 
-.social__ico{
+.social__ico {
   fill: #fff;
 
   transition: fill 0.5s;
 }
 
-a:hover .twitter-icon {
-  fill: #4BABE7;
+a:hover .mastodon-icon {
+  fill: #6364ff;
 }
 
 a:hover .youtube-icon {
   fill: #EA3323;
 }
 
-a:hover .fb-icon {
-  fill: #405898;
+a:hover .bluesky-icon {
+  fill: #1083FE;
 }
