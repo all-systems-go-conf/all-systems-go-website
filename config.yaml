@@ -32,29 +32,16 @@ params:
         systems.
 
   events:
-  - date: 19 Thu
-    event:
-      - title: Early registration
-        time: 18:30 - 21:00
-        place: Kinvolk office
-  - date: 20 Fri
+  - date: Sept 30 - Tues
     event:
       - title: Conference - Day 1
-        time: 9:30 - 19:00
-        place: Spreewerkstätten
-      - title: Social event
-        time: 20:00 - Late
-        place: Mein Haus am See
-  - date: 21 Sat
+        time: 9:30 - 18:30
+        place: Alte Münze
+  - date: Oct 01 - Wed
     event:
       - title: Conference - Day 2
-        time: 9:30 - 19:00
-        place: Spreewerkstätten
-  - date: 22 Sun
-    event:
-      - title: Hackfest - Day 3
-        time: 9:30 - 19:00
-        place: Spreewerkstätten
+        time: 9:30 - 18:30
+        place: Alte Münze
 
   tickets:
     - type: student
