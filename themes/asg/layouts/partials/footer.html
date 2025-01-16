@@ -1,44 +1,43 @@
-    <footer class="footer">
-      <p class="footer__copyright">{{ .Site.Copyright }}</p>
-      <div class="footer__social">
-        {{ partial "socials.html" . }}
-      </div>
-    </footer>
+<footer class="footer">
+  <p class="footer__copyright">{{ .Site.Copyright }}</p>
+  <div class="footer__social">
+    {{ partial "socials.html" . }}
+  </div>
+</footer>
 
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+  <symbol id="bluesky-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M4.876,1.336c2.582,1.932 5.358,5.858 6.374,7.966c1.017,-2.104 3.793,-6.029 6.375,-7.966c1.861,-1.397 4.876,-2.475 4.876,0.964c-0,0.685 -0.394,5.769 -0.623,6.596c-0.805,2.864 -3.731,3.598 -6.335,3.151c4.549,0.774 5.707,3.338 3.205,5.902c-4.748,4.871 -6.821,-1.22 -7.352,-2.781c-0.075,-0.216 -0.115,-0.344 -0.146,-0.344c-0.031,-0 -0.07,0.132 -0.145,0.344c-0.531,1.561 -2.609,7.652 -7.352,2.781c-2.498,-2.564 -1.344,-5.128 3.205,-5.902c-2.604,0.447 -5.53,-0.287 -6.33,-3.156c-0.235,-0.826 -0.628,-5.91 -0.628,-6.595c0,-3.44 3.015,-2.361 4.876,-0.964l-0,0.004z" />
+  </symbol>
 
-      <symbol id="twitter-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 -1.90735e-06 23.2843 -1.90735e-06 15C-1.90735e-06 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM22.4724 12.6225C22.4724 17.4 18.8349 22.9125 12.1824 22.9125C10.1424 22.9125 8.23741 22.3125 6.65491 21.2775C6.93991 21.315 7.22491 21.33 7.51741 21.33C9.21241 21.33 10.7724 20.7525 12.0099 19.785C10.4274 19.755 9.09241 18.7125 8.63491 17.2725C8.85991 17.3175 9.08491 17.34 9.31741 17.34C9.64741 17.34 9.96991 17.295 10.2699 17.2125C8.61241 16.875 7.36741 15.42 7.36741 13.665V13.62C7.85491 13.89 8.40991 14.055 9.00241 14.07C8.02741 13.425 7.38991 12.315 7.38991 11.0625C7.38991 10.4025 7.56991 9.78001 7.87741 9.24751C9.66241 11.4375 12.3249 12.8775 15.3324 13.0275C15.2649 12.765 15.2349 12.4875 15.2349 12.2025C15.2349 10.2075 16.8549 8.58751 18.8499 8.58751C19.8924 8.58751 20.8299 9.02251 21.4899 9.72751C22.3149 9.56251 23.0874 9.26251 23.7849 8.85001C23.5149 9.69751 22.9449 10.4025 22.1949 10.8525C22.9299 10.7625 23.6274 10.5675 24.2724 10.2825C23.7849 11.01 23.1699 11.6475 22.4649 12.1575C22.4724 12.3075 22.4724 12.465 22.4724 12.6225Z"
-         />
-      </symbol>
+  <symbol id="mastodon-icon" width="30" height="34" viewBox="0 0 30 34" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M22.468,7.908c0,-5.225 -3.424,-6.757 -3.424,-6.757c-3.36,-1.543 -12.288,-1.527 -15.616,0c0,0 -3.424,1.532 -3.424,6.757c-0,6.219 -0.355,13.944 5.676,15.541c2.178,0.575 4.048,0.698 5.553,0.612c2.731,-0.15 4.263,-0.973 4.263,-0.973l-0.091,-1.983c-0,-0 -1.952,0.613 -4.145,0.543c-2.171,-0.075 -4.461,-0.237 -4.816,-2.903c-0.033,-0.248 -0.049,-0.497 -0.049,-0.747c4.602,1.123 8.531,0.489 9.612,0.36c3.015,-0.36 5.644,-2.22 5.977,-3.919c0.527,-2.677 0.484,-6.531 0.484,-6.531Zm-4.037,6.73l-2.505,0l0,-6.139c0,-2.671 -3.44,-2.773 -3.44,0.371l-0,3.36l-2.489,-0l-0,-3.36c-0,-3.144 -3.44,-3.042 -3.44,-0.371l-0,6.139l-2.516,0c-0,-6.563 -0.28,-7.95 0.989,-9.407c1.392,-1.553 4.29,-1.656 5.58,0.328l0.623,1.048l0.624,-1.048c1.295,-1.994 4.198,-1.871 5.58,-0.328c1.274,1.468 0.989,2.849 0.989,9.407l0.005,0Z" />
+  </symbol>
 
-      <symbol id="fb-icon" width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.6261 0C7.34183 0 0.626099 6.71723 0.626099 15.0006C0.626099 23.2852 7.34183 30 15.6261 30C23.9104 30 30.6261 23.2852 30.6261 15.0006C30.6261 6.71723 23.9098 0 15.6261 0ZM19.5958 14.9379H16.9985C16.9985 19.0887 16.9985 24.2014 16.9985 24.2014H13.1487C13.1487 24.2014 13.1487 19.1411 13.1487 14.9379H11.3177V11.6673H13.1487V9.548C13.1487 8.03119 13.8687 5.66338 17.0344 5.66338L19.8852 5.67434V8.85112C19.8852 8.85112 18.1516 8.85112 17.8153 8.85112C17.4773 8.85112 16.9991 9.01986 16.9991 9.74111V11.6679H19.9339L19.5958 14.9379Z"
-         />
-      </symbol>
+  <symbol id="youtube-icon" width="30" height="24" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M29.358 4.30783C29.0123 2.88422 28 1.76177 26.716 1.37849C24.3704 0.666687 14.9877 0.666687 14.9877 0.666687C14.9877 0.666687 5.60494 0.666687 3.25926 1.35111C2 1.73439 0.962963 2.88422 0.617284 4.30783C0 6.90864 0 12.3019 0 12.3019C0 12.3019 0 17.7226 0.617284 20.296C0.962963 21.7196 1.97531 22.8421 3.25926 23.2253C5.62963 23.9371 14.9877 23.9371 14.9877 23.9371C14.9877 23.9371 24.3704 23.9371 26.716 23.2527C28 22.8694 29.0123 21.747 29.358 20.3234C29.9753 17.7226 29.9753 12.3293 29.9753 12.3293C29.9753 12.3293 30 6.90864 29.358 4.30783ZM12 17.2845V7.3193L19.8025 12.3019L12 17.2845Z" />
+  </symbol>
+</svg>
 
-      <symbol id="youtube-icon" width="30" height="24" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M29.358 4.30783C29.0123 2.88422 28 1.76177 26.716 1.37849C24.3704 0.666687 14.9877 0.666687 14.9877 0.666687C14.9877 0.666687 5.60494 0.666687 3.25926 1.35111C2 1.73439 0.962963 2.88422 0.617284 4.30783C0 6.90864 0 12.3019 0 12.3019C0 12.3019 0 17.7226 0.617284 20.296C0.962963 21.7196 1.97531 22.8421 3.25926 23.2253C5.62963 23.9371 14.9877 23.9371 14.9877 23.9371C14.9877 23.9371 24.3704 23.9371 26.716 23.2527C28 22.8694 29.0123 21.747 29.358 20.3234C29.9753 17.7226 29.9753 12.3293 29.9753 12.3293C29.9753 12.3293 30 6.90864 29.358 4.30783ZM12 17.2845V7.3193L19.8025 12.3019L12 17.2845Z"
-         />
-      </symbol>
-    </svg>
+{{ if .IsHome }}
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+{{ end }}
 
-    {{ if .IsHome }}
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-    {{ end }}
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
 
-    {{ $particles := resources.Get "js/vendors/particles.js" }}
+{{ $particles := resources.Get "js/vendors/particles.js" }}
 
-    {{ $global := resources.Get "js/index.js" }}
+{{ $global := resources.Get "js/index.js" }}
 
-    {{ $js := slice $particles $global | resources.Concat "js/bundle.js" | minify }}
-    
-    <script src="{{ $js.Permalink }}"></script>
+{{ $js := slice $particles $global | resources.Concat "js/bundle.js" | minify }}
+
+<script src="{{ $js.Permalink }}"></script>

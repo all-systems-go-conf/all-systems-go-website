@@ -78,12 +78,9 @@ params:
     - title: mastodon
       url: 'https://fosstodon.org/@allsystemsgo'
       image: 'mastodon-icon'
-    - title: twitter
-      url: 'https://twitter.com/asgconf'
-      image: 'twitter-icon'
-    - title: facebook
-      url: 'https://www.facebook.com/events/312881192699912/'
-      image: 'fb-icon'
+    - title: bluesky
+      url: 'https://bsky.app/profile/all-systems-go.bsky.social'
+      image: 'bluesky-icon'
     - title: youtube
       url: 'https://www.youtube.com/channel/UCeLpDT5afyiwdbbg1EOxOtQ'
       image: 'youtube-icon'
