@@ -88,29 +88,6 @@ params:
       url: 'https://www.youtube.com/channel/UCeLpDT5afyiwdbbg1EOxOtQ'
       image: 'youtube-icon'
 
-  sponsors:
-  - type: Solar
-    sponsors:
-    - name: Chorus One
-      link: https://chorus.one/
-      logo: chorusone_logo.svg
-    - name: Meta
-      link: https://www.meta.com
-      logo: meta.svg
-  - type: Lunar
-    sponsors:
-    - name: Pantheon
-      link: https://www.pantheon.io
-      logo: pantheon.svg
-  - type: Terrestrial
-    sponsors:
-    - name: Microsoft
-      link: https://www.microsoft.com
-      logo: microsoft.svg
-    - name: SAP
-      link: https://jobs.sap.com/search/?title=Garden&location=DE
-      logo: sap-logo.svg
-
   lookBack:
     year: 2024
     description: All Systems Go! 2024 welcomed more than 150 attendees for 2 days of talks, discussions and collaborating. We captured some of the going-ons in the photos and videos below.
