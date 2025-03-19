@@ -18,8 +18,6 @@ params:
 
 #  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
-  sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202025%20Sponsorship%20Prospectus.pdf
-  sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
     notice: CFP now open!
