@@ -84,7 +84,7 @@
 -->
   <!--  <section class="tickets" id="tickets">
     <h2 class="tickets__title page-title">tickets</h2> -->
-    <!--<div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>-->
+  <!--<div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>-->
   <!--  <div class="tickets__text"><span>Tickets are now SOLD OUT!</span> </div>
 
     <div class="tickets__wrapper">
@@ -124,28 +124,26 @@
           alt="man telling about conduct" draggable="false">
       </div>
     </section>
-
-    <!--
-      <section class="participation" id="participation">
-        <div class="participation__photo-wrapper">
-          <img class="participation__photo" src="{{ $.Site.BaseURL }}images/participation-photo.png" width="360" height="573"
-            alt="man telling about conduct" draggable="false">
-        </div>
-        <div class="participation__wrapper">
-          <h2 class="participation__title page-title">Call for Participation</h2>
-          {{ with .Site.Params.participation }}
-          <p class="participation__description">{{ .description }}</p>
-          <ul class="participation__list">
-            {{ range .topics }}
-            <li class="participation__item">{{ . }}</li>
-            {{ end }}
-          </ul>
+    <section class="participation" id="participation">
+      <div class="participation__photo-wrapper">
+        <img class="participation__photo" src="{{ $.Site.BaseURL }}images/participation-photo.png" width="360"
+          height="573" alt="man telling about conduct" draggable="false">
+      </div>
+      <div class="participation__wrapper">
+        <h2 class="participation__title page-title">Call for Participation</h2>
+        {{ with .Site.Params.participation }}
+        <p class="participation__description">{{ .description }}</p>
+        <ul class="participation__list">
+          {{ range .topics }}
+          <li class="participation__item">{{ . }}</li>
           {{ end }}
-          <p class="participation__description">CFP closes June 14th</p>
-          <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">Submit your proposal now!</a>
-        </div>
-      </section>
--->
+        </ul>
+        {{ end }}
+        <p class="participation__description">CFP closes June 13th</p>
+        <a class="participation__link" href="{{ .Site.Params.participationLink }}" target="">Submit your proposal
+          now!</a>
+      </div>
+    </section>
   </div>
 
   <section class="sponsors" id="sponsor">

@@ -17,12 +17,12 @@ params:
   socialImage: all-systems-go-social-card.png
 
 #  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
-#  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
+  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
   sponsorshipLink: https://all-systems-go.io/files/All%20Systems%20Go!%202025%20Sponsorship%20Prospectus.pdf
   sponsorshipEmail: sponsorship@all-systems-go.io
   
   header:
-    notice: Date and venue announced!
+    notice: CFP now open!
     eventDate: Sept. 30th-Oct. 1st 2025
     eventCity: 'Date: Sept. 30th-Oct. 1st 2025 - Place: Berlin, DE'
 
