@@ -18,7 +18,7 @@
 
       <!-- Custom CSS -->
       {{ $options := (dict "targetPath" "/css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-      {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options }}
+      {{ $style := resources.Get "scss/index.scss" | css.Sass $options }}
 
     <!-- Search meta tags -->
     {{- if .Params.noindex -}}
