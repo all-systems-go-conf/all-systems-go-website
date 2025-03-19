@@ -147,31 +147,14 @@
   </div>
 
   <section class="sponsors" id="sponsor">
-    <h2 class="sponsors__title page-title">Become a Sponsor!</h2>
-    {{ if and (isset .Site.Params "sponsors") (gt (len .Site.Params.sponsors) 0) }}
-    <p class="sponsors__description">All Systems Go! is only possibly with the generous support from our sponsors.
-      {{ if not .Site.Params.sponsorshipLink }}
-      <a class="sponsors__link" href="mailto:{{ .Site.Params.sponsorshipEmail }}"> Reach out to become a sponsor!</a>
-      {{ end }}
+    <h2 class="sponsors__title page-title">Sponsorship</h2>
+    <p class="sponsors__description">All Systems Go! 2025 will be fully funded by attendees through ticket sales.
+      
+      We will not be accepting sponsorships for this year.
+     
+      Ticket sales will start early April. More details to come.
+    </p> 
     </p>
-    {{ range .Site.Params.sponsors }}
-    <div class="sponsors__block">
-      <h3>{{ .type }}:</h3>
-      <ul class="sponsors__list">
-        {{ range .sponsors }}
-        <li class="sponsors__item">
-          <a href="{{ .link }}" target="_blank">
-            <img src="{{ $.Site.BaseURL }}images/sponsors/{{ .logo }}" alt="{{ .logo }}" class="sponsor__image">
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-    {{ end }}
-    {{ end }}
-    {{ if .Site.Params.sponsorshipLink }}
-    <a class="sponsors__link" href="{{ .Site.Params.sponsorshipLink }}"> Sponsorship prospectus</a>
-    {{ end }}
   </section>
 
   <section class="look-back">
