@@ -16,7 +16,7 @@ params:
   
   socialImage: all-systems-go-social-card.png
 
-#  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
+  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
   
   header:
@@ -44,19 +44,16 @@ params:
   tickets:
     - type: student
       price:
-        early: €40
-        standard: €50
-        late: €60
+        standard: €80
+        late: €90
     - type: individual
       price:
-        early: €220
-        standard: €250
-        late: €290
+        standard: €500
+        late: €600
     - type: corporate
       price:
-        early: €410
-        standard: €450
-        late: €500
+        standard: €750
+        late: €900
 
   participation:
     description:  "All Systems Go! wants to encourage and attract as broad an interest as
@@ -98,7 +95,7 @@ params:
 menu:
   main:
     - identifer: tickets
-    #  name: Tickets
+      name: Tickets
       url: "#tickets"
       weight: -120
     - identifer: schedule
@@ -117,7 +114,3 @@ menu:
       name: CFP
       url: "#participation"
       weight: -85
-    - identifer: sponsorship
-      name: Sponsorship
-      url: "#sponsor"
-      weight: -80

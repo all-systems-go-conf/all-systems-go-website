@@ -82,20 +82,27 @@
       </div>
     </section>
 -->
-  <!--  <section class="tickets" id="tickets">
-    <h2 class="tickets__title page-title">tickets</h2> -->
-  <!--<div class="tickets__text"><span>Tickets are now available!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>-->
-  <!--  <div class="tickets__text"><span>Tickets are now SOLD OUT!</span> </div>
+  <section class="tickets" id="tickets">
+    <h2 class="tickets__title page-title">tickets</h2>
+  <div class="tickets__text"><span>Tickets are available now!</span> <a class="tickets__link" href="{{ .Site.Params.ticketsLink }}">Get yours here.</a></div>
+  <!--  <div class="tickets__text"><span>Tickets are now SOLD OUT!</span> </div>-->
+  <p class="tickets__description">All Systems Go! 2025 aims to be fully funded by attendees through ticket sales.
+    
+    Listed ticket prices are suggested prices that can be increased or decreased (to a minumum) based on your, or your company's, ability to support the event.
 
+    This is a new model for this year. We are interested in your feedback and to see how it shapes the event going forward. 
+  </p>
     <div class="tickets__wrapper">
       {{ range .Site.Params.tickets }}
       <div class="tickets__block">
         <h3 class="tickets__sub-title">{{ .type }}:</h3>
         <ul class="tickets__list">
+          {{ if .price.early}}
           <li class="tickets__item tickets__item--{{ .type }}">
             <div>Early</div>
             <div class="tickets__price">{{ .price.early }}</div>
           </li>
+          {{ end }}
           <li class="tickets__item tickets__item--{{ .type }}">
             <div>standard</div>
             <div class="tickets__price">{{ .price.standard }}</div>
@@ -108,7 +115,7 @@
       </div>
       {{ end }}
     </div>
-  </section> -->
+  </section>
 
   <div class="container">
     <section class="conduct" id="conduct">
@@ -152,7 +159,7 @@
       
       We will not be accepting sponsorships for this year.
      
-      Ticket sales will start early April. More details to come.
+      Ticket sales start April 1st.
     </p> 
     </p>
   </section>

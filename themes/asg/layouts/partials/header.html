@@ -15,7 +15,7 @@
         <!-- <li class="menu__item"><a class="menu__link" hrse"{{ .Site.BaseURL }}#schedule">Schedule</a></li>
         <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#speakers">Speakers</a></li> -->
         <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#conduct">Code of conduct</a></li>
-        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#sponsor">Sponsorship</a></li>
+        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#tickets">Tickets</a></li>
       </ul>
     </nav>
     <div class="header__date">
@@ -23,7 +23,7 @@
       <p>{{ .Site.Params.Header.eventCity }}</p>
     </div>
     {{ if .Site.Params.ticketsLink }}
-    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">SOLD OUT!</a>
+    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">Get Tix!</a>
     {{ end }}
   </div>
 </header>
