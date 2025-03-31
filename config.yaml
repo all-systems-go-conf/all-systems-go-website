@@ -48,8 +48,8 @@ params:
         late: €90
     - type: individual
       price:
-        standard: €500
-        late: €600
+        standard: €450
+        late: €550
     - type: corporate
       price:
         standard: €750
