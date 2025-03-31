@@ -13,7 +13,9 @@
     <nav class="header__menu menu">
       <ul class="menu__list">
         {{ range .Site.Menus.main }}
-        <li class="menu__item"><a class="menu__link" href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ if .Name }}
+          <li class="menu__item"><a class="menu__link" href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end}}
         {{ end }}
       </ul>
     </nav>
@@ -22,7 +24,7 @@
       <p>{{ .Site.Params.Header.eventCity }}</p>
     </div>
     {{ if .Site.Params.ticketsLink }}
-    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">SOLD OUT!</a>
+    <a class="header__button btn btn-simple" href="{{ .Site.Params.ticketsLink }}" target="_blank">Get Tix!</a>
     {{ end }}
   </div>
 </header>
