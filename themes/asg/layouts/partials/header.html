@@ -12,10 +12,11 @@
     </div>
     <nav class="header__menu menu">
       <ul class="menu__list">
-        <!-- <li class="menu__item"><a class="menu__link" hrse"{{ .Site.BaseURL }}#schedule">Schedule</a></li>
-        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#speakers">Speakers</a></li> -->
-        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#conduct">Code of conduct</a></li>
-        <li class="menu__item"><a class="menu__link" href="{{ .Site.BaseURL }}#tickets">Tickets</a></li>
+        {{ range .Site.Menus.main }}
+          {{ if .Name }}
+          <li class="menu__item"><a class="menu__link" href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end}}
+        {{ end }}
       </ul>
     </nav>
     <div class="header__date">

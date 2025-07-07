@@ -20,7 +20,7 @@ params:
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
   
   header:
-    notice: CFP now open!
+    notice: Schedule now live!
     eventDate: Sept. 30th-Oct. 1st 2025
     eventCity: 'Date: Sept. 30th-Oct. 1st 2025 - Place: Berlin, DE'
 
@@ -30,16 +30,16 @@ params:
         systems.
 
   events:
-  - date: Sept 30 - Tues
-    event:
-      - title: Conference - Day 1
-        time: 9:30 - 18:30
-        place: Alte Münze
-  - date: Oct 01 - Wed
-    event:
-      - title: Conference - Day 2
-        time: 9:30 - 18:30
-        place: Alte Münze
+    - date: Sept 30 - Tues
+      event:
+        - title: Conference - Day 1
+          time: 9:30 - 18:30
+          place: Alte Münze
+    - date: Oct 01 - Wed
+      event:
+        - title: Conference - Day 2
+          time: 9:30 - 18:30
+          place: Alte Münze
 
   tickets:
     - type: student
@@ -99,7 +99,7 @@ menu:
       url: "#tickets"
       weight: -120
     - identifer: schedule
-    #  name: Schedule
+      name: Schedule
       url: "#schedule"
       weight: -110
     - identifer: speakers
@@ -110,7 +110,7 @@ menu:
       name: Code of conduct
       url: "#conduct"
       weight: -90
-    - identifer: cfp
-      name: CFP
-      url: "#participation"
-      weight: -85
+    # - identifer: cfp
+    #   name: CFP
+    #   url: "#participation"
+    #   weight: -85
