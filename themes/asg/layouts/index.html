@@ -53,6 +53,17 @@
     {{ end }}
   </section>
 
+  <section class="video-content">
+    <h2 class="video-content__title page-title">Live streaming</h2>
+    <div class="video-content__wrapper">
+      <iframe width="560" height="315"
+        src="https://streaming.media.ccc.de/asg2025"
+        title="Live Streaming" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
   <!--  <section class="speakers" id="speakers">
       {{ if and (isset .Site.Data.speakers "speakers") (gt (len .Site.Data.speakers.speakers) 0) }}
       <h2 class="speakers__title page-title">Featured speakers</h2>
