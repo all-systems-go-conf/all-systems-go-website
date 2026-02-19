@@ -16,7 +16,7 @@ params:
 
   socialImage: all-systems-go-social-card.png
 
-  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2026'
+#  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2026'
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2026/cfp'
 
   header:
@@ -94,10 +94,10 @@ params:
 
 menu:
   main:
-    - identifer: tickets
-      name: Tickets
-      url: "#tickets"
-      weight: -120
+    #- identifer: tickets
+    #  name: Tickets
+    #  url: "#tickets"
+    #  weight: -120
     #- identifer: schedule
     #  name: Schedule
     #  url: "#schedule"
