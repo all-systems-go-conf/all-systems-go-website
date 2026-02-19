@@ -1,7 +1,7 @@
 title: All Systems Go!
 theme: asg
 languageCode: en-us
-copyright: © All rights reserved - All Systems Go! 2025
+copyright: © All rights reserved - All Systems Go! 2026
 pluralizelisttitles: 'false'
 
 author:
@@ -16,13 +16,13 @@ params:
   
   socialImage: all-systems-go-social-card.png
 
-  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
-  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
+#  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
+#  participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2025/cfp'
   
   header:
-    notice: Recordings available
-    eventDate: Sept. 30th-Oct. 1st 2025
-    eventCity: 'Date: Sept. 30th-Oct. 1st 2025 - Place: Berlin, DE'
+    notice: Date and venue announced!
+    eventDate: Sept. 30th-Oct. 1st 2026
+    eventCity: 'Date: Sept. 30th-Oct. 1st 2026 - Place: Berlin, DE'
 
   event: 
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
@@ -30,12 +30,12 @@ params:
         systems.
 
   events:
-    - date: Sept 30 - Tues
+    - date: Sept 30 - Wed
       event:
         - title: Conference - Day 1
           time: 9:30 - 18:30
           place: Alte Münze
-    - date: Oct 01 - Wed
+    - date: Oct 01 - Thu
       event:
         - title: Conference - Day 2
           time: 9:30 - 18:30
