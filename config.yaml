@@ -13,18 +13,18 @@ params:
   Author: All Systems Go! Team
   Email: org-team@all-systems-go.io
   Subtitle: The foundational user-space Linux conference
-  
+
   socialImage: all-systems-go-social-card.png
 
 #  ticketsLink: 'https://ti.to/all-systems-go/all-systems-go-2025'
   participationLink: 'https://cfp.all-systems-go.io/all-systems-go-2026/cfp'
-  
+
   header:
     notice: CFP now open!
     eventDate: Sept. 30th-Oct. 1st 2026
     eventCity: 'Date: Sept. 30th-Oct. 1st 2026 - Place: Berlin, DE'
 
-  event: 
+  event:
     description: All Systems Go! is a conference focused on foundational user-space Linux technologies. Its goal is to provide a
         gathering place for both contributors and users of projects that make up the foundation of modern Linux
         systems.
@@ -57,7 +57,7 @@ params:
 
   participation:
     description:  "All Systems Go! wants to encourage and attract as broad an interest as
-          possible from projects that are within its focus area while at the same time ensuring that we get 
+          possible from projects that are within its focus area while at the same time ensuring that we get
           submissions and project involvement related to the following topics:"
     topics: [
       "Service management",
