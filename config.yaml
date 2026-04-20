@@ -94,10 +94,10 @@ params:
 
 menu:
   main:
-    #- identifer: tickets
-    #  name: Tickets
-    #  url: "#tickets"
-    #  weight: -120
+    - identifer: tickets
+      name: Tickets
+      url: "#tickets"
+      weight: -120
     #- identifer: schedule
     #  name: Schedule
     #  url: "#schedule"
@@ -110,7 +110,7 @@ menu:
       name: Code of conduct
       url: "#conduct"
       weight: -90
-    # - identifer: cfp
-    #   name: CFP
-    #   url: "#participation"
-    #   weight: -85
+     - identifer: cfp
+       name: CFP
+       url: "#participation"
+       weight: -85
