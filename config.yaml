@@ -110,7 +110,7 @@ menu:
       name: Code of conduct
       url: "#conduct"
       weight: -90
-     - identifer: cfp
-       name: CFP
-       url: "#participation"
-       weight: -85
+    - identifer: cfp
+      name: CFP
+      url: "#participation"
+      weight: -85
