@@ -33,12 +33,12 @@ params:
     - date: Sept 30 - Wed
       event:
         - title: Conference - Day 1
-          time: 9:30 - 18:30
+          time: 9:25 - 17:30
           place: Alte Münze
     - date: Oct 01 - Thu
       event:
         - title: Conference - Day 2
-          time: 9:30 - 18:30
+          time: 10:00 - 17:30
           place: Alte Münze
 
   tickets:
